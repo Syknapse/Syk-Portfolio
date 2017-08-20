@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+body {
+
+}
+
+.nav {
+	position: fixed;
+	display: grid;
+	width: 35%;
+	height: 100vh;
+	background-color: rgba(242, 82, 151, .1);
+	grid-template-rows: 50% repeat(5, 1fr);
+	/*justify-items: center;*/
+	/*align-items: end; */
+	grid-template-areas: 
+		"."
+		"syk"
+		"por"
+		"exp"
+		"skl"
+		"life";
+}
+
+#b1 {
+	grid-area: syk;
+}
+
+#b2 {
+	grid-area: por;
+}
+
+#b3 {
+	grid-area: exp;
+}
+
+#b4 {
+	grid-area: skl;
+}
+
+#b5 {
+	grid-area: life;
+}
+
+.nav > button {
+	background-color: transparent;
+	height: 50px;
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	-webkit-box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.3);
+}
+
+.slides {
+	position: absolute;
+	right: 0;
+	height: 100vh;
+	width: 65%;
+}
+
+.slide1, .slide2, .slide3, .slide4, .slide5 {
+	height: 100vh;
+	width: auto;
+	border: 1px solid;
+}
+
+.slide1 {
+	background-color: #42b201;
+	opacity: .5;
+}
+
+.slide2 {
+	background-color: #783de5;
+	opacity: .5;
+}
+
+.slide3 {
+	background-color: #ced1b8;
+	opacity: .5;
+}
+
+.slide4 {
+	background-color:  #e04387;
+	opacity: .5;
+}
+
+.slide5 {
+	background-color: #47adc1;
+	opacity: .5;
+}
