@@ -4,16 +4,20 @@
 	padding: 0;
 }
 
-body {
+/*font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Arima Madurai', cursive;*/
 
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 10px;
 }
 
 .nav {
 	position: fixed;
-	display: grid;
 	width: 35%;
 	height: 100vh;
-	background-color: rgba(242, 82, 151, .1);
+	background-color: rgba(237, 230, 235, .1) /*rgba(242, 82, 151, .1)*/;
+	display: grid;	
 	grid-template-rows: 50% repeat(5, 1fr);
 	/*justify-items: center;*/
 	/*align-items: end; */
@@ -48,12 +52,15 @@ body {
 
 .nav > button {
 	background-color: transparent;
+	font-family: 'Arima Madurai', cursive;
+	font-weight: 100;
+	font-size: 2.2em;
 	height: 50px;
 	width: 80%;
 	margin: auto;
 	border-radius: 10px;
-	-webkit-box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.3);
-	-moz-box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.3);
 	box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.3);
 }
 
@@ -67,7 +74,7 @@ body {
 .slide1, .slide2, .slide3, .slide4, .slide5 {
 	height: 100vh;
 	width: auto;
-	border: 1px solid;
+	/*border: 1px solid;*/
 }
 
 .slide1 {
@@ -78,6 +85,49 @@ body {
 .slide2 {
 	background-color: #783de5;
 	opacity: .5;
+	font-size: 3em;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+	grid-template-areas: 
+	    ". prg p3"
+	    "mus p1 tcr"
+	    "p2 rst p4";
+}
+
+.icon1-s2, .icon2-s2, .icon3-s2, .icon4-s2 {
+	font-size: 1.5em;
+}
+
+.icon1-s2 {
+  grid-area: prg;
+}
+.icon2-s2 {
+  grid-area: mus;
+}
+.icon3-s2 {
+  grid-area: tcr;
+}
+.icon4-s2 {
+  grid-area: rst;
+}
+.info1-s2 {
+  grid-area: p1;
+  display: none;
+}
+.info2-s2 {
+  grid-area: p2;
+  display: none;
+}
+.info3-s2 {
+  grid-area: p3;
+  display: none;
+}
+.info4-s2 {
+  grid-area: p4;
+  display: none;
 }
 
 .slide3 {
@@ -94,3 +144,4 @@ body {
 	background-color: #47adc1;
 	opacity: .5;
 }
+
