@@ -18,15 +18,15 @@ a {
 	text-align: center;
 }
 
-.nav {
+/* ------------ NAV ------------ */
+
+nav {
 	position: fixed;
 	width: 35%;
 	height: 100vh;
 	background-color: rgba(237, 230, 235, .1) /*rgba(242, 82, 151, .1)*/;
 	display: grid;	
 	grid-template-rows: 50% repeat(5, 1fr);
-	/*justify-items: center;
-	align-items: end;*/
 	grid-template-areas: 
 		"."
 		"syk"
@@ -57,7 +57,7 @@ a {
 	grid-area: life;
 }
 
-.nav > a {
+nav > a {
 	background-color: transparent;
 	font-family: 'Arima Madurai', cursive;
 	font-weight: 100;
@@ -66,9 +66,6 @@ a {
 	width: 80%;
 	margin: auto;
 	border-radius: 10px;
-	/*-webkit-box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.3);
-	-moz-box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.3);
-	box-shadow: 1px 1px 12px -5px rgba(0,0,0,0.3);*/
 	transition: 0.4s linear;
 }
 
@@ -84,7 +81,7 @@ nav a:active {
 	font-size: 2.1em;
 }
 
-.flash {
+.arrow {
 	display: inline-block;
 	/* 	to make span scale */
 	width: 0px; 
@@ -92,7 +89,7 @@ nav a:active {
 	transition: 0.3s linear;
 }
 
-nav a:hover .flash {
+nav a:hover .arrow {
 	width: 40px;
 	opacity: .5;
 }
@@ -101,27 +98,40 @@ nav a:hover .flash {
 
 
 
-/* slides*/
+/* ------------ SECTIONS ------------ */
 
-.slides {
+.sections {
 	position: absolute;
 	right: 0;
 	height: 100vh;
 	width: 65%;
 }
 
-#slide1, #slide2, #slide3, #slide4, #slide5 {
+#section1, #section2, #section3, #section4, #section5 {
 	height: 100vh;
 	width: auto;
 	/*border: 1px solid;*/
 }
 
-#slide1 {
+#section1 {
 	background-color: #42b201;
 	opacity: .5;
 }
 
-#slide2 {
+#section2 {
+	background-color: #ced1b8;
+	opacity: .5;
+	/* -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;*/
+}
+
+/*a[id="b3"]:target ~ .slides .slide3 {
+    -webkit-transform: translateY(-300vh);
+    transform: translateY(-300vh);
+}*/
+
+/* --------- section 3 -------- */
+#section3 {
 	background-color: #783de5;
 	opacity: .5;
 	font-size: 3em;
@@ -136,59 +146,47 @@ nav a:hover .flash {
 	    "p2 rst p4";
 }
 
-.icon1-s2, .icon2-s2, .icon3-s2, .icon4-s2 {
+.section3-icon1, .section3-icon2, .section3-icon3, .section3-icon4 {
 	font-size: 1.5em;
 }
 
-.icon1-s2 {
+.section3-icon1 {
   grid-area: prg;
 }
-.icon2-s2 {
+.section3-icon2 {
   grid-area: mus;
 }
-.icon3-s2 {
+.section3-icon3 {
   grid-area: tcr;
 }
-
-.icon4-s2 {
+.section3-icon4 {
   grid-area: rst;
 }
-.info1-s2 {
+
+.section3-info1 {
   grid-area: p1;
   display: none;
   /*animation-duration: 15s;*/
 }
-.info2-s2 {
+.section3-info2 {
   grid-area: p2;
   display: none;
 }
-.info3-s2 {
+.section3-info3 {
   grid-area: p3;
   display: none;
 }
-.info4-s2 {
+.section3-info4 {
   grid-area: p4;
   display: none;
 }
 
-#slide3 {
-	background-color: #ced1b8;
-	opacity: .5;
-	/* -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;*/
-}
-
-/*a[id="b3"]:target ~ .slides .slide3 {
-    -webkit-transform: translateY(-300vh);
-    transform: translateY(-300vh);
-}*/
-
-#slide4 {
+#section4 {
 	background-color:  #e04387;
 	opacity: .5;
 }
 
-#slide5 {
+#section5 {
 	background-color: #47adc1;
 	opacity: .5;
 }
@@ -196,12 +194,25 @@ nav a:hover .flash {
 /*waypoint*/
 
 .waypointed1, .waypointed2 {
-	width: 500px;
+	/*width: 500px;
 	height: 500px;
-	background-color: blue;
+	background-color: blue;*/
 	transition: 2.6s;
 }
 
+/*.section3-waypoint-panel {
+	transition: .6s;
+	opacity: 0;
+}*/
+.section3-waypoint-left {
+	transition: .6s;
+	opacity: 0;
+}
+.section3-waypoint-right {
+	transition: .6s;
+	opacity: 0;
+}
+
 .animate-waypoint {
-	background-color: red;
+	opacity: 1;
 }
