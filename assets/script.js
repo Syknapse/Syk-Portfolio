@@ -21,3 +21,21 @@ $(function() {
         $('.info4-s2').toggle();
     });                        
 });
+
+var animateIt1 = $('.waypointed1');
+var animateIt2 = $('.waypointed2');
+
+animateIt1.waypoint(function (direction){
+    if (direction == 'down') {
+       animateIt1.addClass('animate-waypoint'); 
+   } else {
+        animateIt1.removeClass('animate-waypoint');
+   }
+  
+}, {offset: '50%'});
+
+
+
+animateIt2.waypoint(function (){
+  animateIt2.addClass('animate-waypoint');
+}, {offset: '50%'});
