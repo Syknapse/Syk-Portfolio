@@ -141,9 +141,9 @@ nav a:hover .arrow {
 	grid-template-rows: repeat(3, 1fr);
 	align-items: center;
 	grid-template-areas: 
-	    ". prg p3"
-	    "mus p1 tcr"
-	    "p2 rst p4";
+	    ". prg ."
+	    "mus screen tcr"
+	    ". rst .";
 }
 
 .section3-icon1, .section3-icon2, .section3-icon3, .section3-icon4 {
@@ -164,20 +164,20 @@ nav a:hover .arrow {
 }
 
 .section3-info1 {
-  grid-area: p1;
+  grid-area: screen;
   display: none;
   /*animation-duration: 15s;*/
 }
 .section3-info2 {
-  grid-area: p2;
+  grid-area: screen;
   display: none;
 }
 .section3-info3 {
-  grid-area: p3;
+  grid-area: screen;
   display: none;
 }
 .section3-info4 {
-  grid-area: p4;
+  grid-area: screen;
   display: none;
 }
 

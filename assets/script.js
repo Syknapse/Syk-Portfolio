@@ -2,23 +2,26 @@ $(document).ready();
 
 $(function() {
     $('.section3-icon1').click(function() {
-        $('.section3-info1').toggle();
+        $('.section3-info1').toggle().addClass('animated fadeInDown');
+        $('.section3-info2, .section3-info3, .section3-info4').hide();
     });                        
 });
 $(function() {
     $('.section3-icon2').click(function() {
-        $('.section3-info2').toggle();
-        $('.section3-info2').addClass('animated fadeInUp');
+        $('.section3-info2').toggle().addClass('animated fadeInLeft');
+        $('.section3-info1, .section3-info3, .section3-info4').hide();
     });                      
 });
 $(function() {
     $('.section3-icon3').click(function() {
-        $('.section3-info3').toggle();
+        $('.section3-info3').toggle().addClass('animated fadeInRight');
+        $('.section3-info1, .section3-info2, .section3-info4').hide();
     });                        
 });
 $(function() {
     $('.section3-icon4').click(function() {
-        $('.section3-info4').toggle();
+        $('.section3-info4').toggle().addClass('animated fadeInUp');
+        $('.section3-info1, .section3-info2, .section3-info3').hide();
     });                        
 });
 
