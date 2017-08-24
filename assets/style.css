@@ -25,6 +25,9 @@ nav {
 	width: 35%;
 	height: 100vh;
 	background-color: rgba(237, 230, 235, .1) /*rgba(242, 82, 151, .1)*/;
+	-webkit-box-shadow: 3px 0px 8px -2px rgba(200,200,200,0.3);
+	-moz-box-shadow: 3px 0px 8px -2px rgba(200,200,200,0.3);
+	box-shadow: 3px 0px 8px -2px rgba(200,200,200,0.3);
 	display: grid;	
 	grid-template-rows: 50% repeat(5, 1fr);
 	grid-template-areas: 
@@ -112,7 +115,6 @@ nav a:hover .arrow {
 #section1, #section2, #section3, #section4, #section5 {
 	height: 100vh;
 	width: auto;
-	/*border: 1px solid;*/
 }
 
 /* --------- section 1 -------- */
@@ -137,18 +139,31 @@ nav a:hover .arrow {
 	align-items: flex-end;
 	width: 100%;
 	height: 100%;
+	padding-top: 20px;
 }
 
 #profile {
-	max-width: 100%;
-	border: 3px solid black;
-	border-radius: 10%;
+	max-width: 90%;
+/*	border: 2px solid black;*/
+	border-radius: 20% 0 20% 0;
+	filter: grayscale(100%) brightness(190%);
+	/*-webkit-box-shadow: 5px 5px 8px -2px rgba(200,200,200,0.3);
+	-moz-box-shadow: 5px 5px 8px -2px rgba(200,200,200,0.3);
+	box-shadow: 5px 5px 8px -2px rgba(200,200,200,0.3);*/
 }
+
+#profile:hover {
+		filter: grayscale(50%) brightness(100%);
+}
+
+/*create tool tip "prefer email or checking out my instagram"*/
 
 .name {
 	grid-area: name;
 	display: flex;
 	flex-direction: column;
+	font-size: 3vmin;
+	padding: 0 1px 15px 1px;
 }
 
 .social1 {
@@ -178,14 +193,7 @@ nav a:hover .arrow {
 /* --------- section 2 -------- */
 #section2 {
 	background-color: rgba(182, 255, 109, .7); /*#ced1b8*/
-	/* -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;*/
 }
-
-/*a[id="b3"]:target ~ .slides .slide3 {
-    -webkit-transform: translateY(-300vh);
-    transform: translateY(-300vh);
-}*/
 
 /* --------- section 3 -------- */
 #section3 {
@@ -202,46 +210,46 @@ nav a:hover .arrow {
 	    ". icon-four .";
 }
 
-.section3-icon1, .section3-icon2, .section3-icon3, .section3-icon4 {
-	font-size: 1.5em;
-}
-
 .section3-icon1 {
   grid-area: icon-one;
+  font-size: 1.5em;
 }
 .section3-icon2 {
   grid-area: icon-two;
+  font-size: 1.5em;
 }
 .section3-icon3 {
   grid-area: icon-three;
+  font-size: 1.5em;
 }
 .section3-icon4 {
   grid-area: icon-four;
+  font-size: 1.5em;
 }
 
-.section3-info1 {
-  grid-area: screen;
-  display: none;
-}
-.section3-info2 {
-  grid-area: screen;
-  display: none;
-}
-.section3-info3 {
-  grid-area: screen;
-  display: none;
-}
-.section3-info4 {
+.section3-info1, .section3-info2, .section3-info3, .section3-info4 {
   grid-area: screen;
   display: none;
 }
 
+
+/* --------- section 4 -------- */
 #section4 {
 	background-color:  rgba(255, 96, 104, .7); /*#e04387*/
 }
 
+/* --------- section 5 -------- */
 #section5 {
 	background-color: rgba(232, 186, 98, .7); /*#47adc1*/
+}
+
+/* --------- footer -------- */
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100vh;
+	font-size: 3em;
 }
 
 /*waypoint*/
@@ -254,11 +262,7 @@ nav a:hover .arrow {
 	opacity: 1;
 }
 
-.section3-waypoint-left {
-	transition: .6s;
-	opacity: 0;
-}
-.section3-waypoint-right {
+.section3-waypoint-left, .section3-waypoint-right, .social-waypoint-left, .social-waypoint-right {
 	transition: .6s;
 	opacity: 0;
 }

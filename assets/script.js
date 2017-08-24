@@ -31,21 +31,33 @@ $(function() {
 
 // ********* Waypoints ********** 
 
+var socialLeft = $('.social-waypoint-left');
+var socialRight = $('.social-waypoint-right');
 var animatePanel = $('.section3-waypoint-panel');
-var animateIt1 = $('.section3-waypoint-left');
-var animateIt2 = $('.section3-waypoint-right');
+var sectionThreeLeft = $('.section3-waypoint-left');
+var sectionThreeRight = $('.section3-waypoint-right');
 
+
+// section one
+socialLeft.waypoint(function (){
+  socialLeft.addClass('animate-waypoint animated fadeInLeft');
+}, {offset: '50%'});
+
+socialRight.waypoint(function (){
+  socialRight.addClass('animate-waypoint animated fadeInRight');
+}, {offset: '50%'});
 
 // animatePanel.waypoint(function (){
 //   animatePanel.addClass('animate-waypoint animated fadeInUp');
 // }, {offset: '50%'});
 
-animateIt1.waypoint(function (){
-  animateIt1.addClass('animate-waypoint animated fadeInLeft');
+// section three
+sectionThreeLeft.waypoint(function (){
+  sectionThreeLeft.addClass('animate-waypoint animated fadeInLeft');
 }, {offset: '50%'});
 
-animateIt2.waypoint(function (){
-  animateIt2.addClass('animate-waypoint animated fadeInRight');
+sectionThreeRight.waypoint(function (){
+  sectionThreeRight.addClass('animate-waypoint animated fadeInRight');
 }, {offset: '73%'});
 
 // var animateIt2 = $('.waypointed2');
