@@ -58,6 +58,8 @@ nav {
 
 #b5 {
 	grid-area: life;
+	margin-bottom: 30px;
+	margin-top: 2px;
 }
 
 nav > a {
@@ -68,13 +70,13 @@ nav > a {
 	height: 50px;
 	width: 80%;
 	margin: auto;
-	border-radius: 10px;
-	transition: 0.3s linear;
+/*	border-radius: 10px;
+*/	transition: 0.3s linear;
 }
 
 nav a:hover {
 	color: rgba(224, 88, 226, .9);
-	box-shadow: 0px 3px 6px -2px rgba(224, 88, 226, .7);
+	box-shadow: 0px 3px 4px -2px rgba(224, 88, 226, .7);
 	padding-left: 20px;
 	font-size: 2.3em;
 }
@@ -98,10 +100,6 @@ nav a:hover .arrow {
 	width: 40px;
 	opacity: .5;
 }
-
-/* pagination scrolling */
-
-
 
 /* ------------ SECTIONS ------------ */
 
@@ -144,16 +142,19 @@ nav a:hover .arrow {
 
 #profile {
 	max-width: 90%;
-/*	border: 2px solid black;*/
 	border-radius: 20% 0 20% 0;
+	transition: 0.8s ease-out;
 	filter: grayscale(100%) brightness(190%);
-	/*-webkit-box-shadow: 5px 5px 8px -2px rgba(200,200,200,0.3);
-	-moz-box-shadow: 5px 5px 8px -2px rgba(200,200,200,0.3);
-	box-shadow: 5px 5px 8px -2px rgba(200,200,200,0.3);*/
+	-webkit-box-shadow: -1px 1px 8px -2px rgba(0,0,0,0.3);
+	-moz-box-shadow: -1px 1px 8px -2px rgba(0,0,0,0.3);
+	box-shadow: -1px 1px 8px -2px rgba(0,0,0,0.3);
 }
 
 #profile:hover {
-		filter: grayscale(50%) brightness(100%);
+	filter: none;
+	-webkit-box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
+	-moz-box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
+	box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
 }
 
 /*create tool tip "prefer email or checking out my instagram"*/
@@ -164,6 +165,12 @@ nav a:hover .arrow {
 	flex-direction: column;
 	font-size: 3vmin;
 	padding: 0 1px 15px 1px;
+	transition: 0.3s ease;
+}
+
+.name:hover {
+	font-size: 3.1vmin;
+	font-weight: bold;
 }
 
 .social1 {
@@ -183,6 +190,24 @@ nav a:hover .arrow {
 
 .social4 {
 	grid-area: pen;
+	font-size: 1.5em;
+}
+
+.social {
+	border: 2px solid rgba(237, 230, 235, .1);
+	border-radius: 27%;
+	transition: 0.3s ease-in-out;
+}
+
+.social:hover {
+    box-shadow: 0px 3px 4px -2px rgba(224, 88, 226, .7);
+	font-size: 1.7em;
+	border: 1px solid;
+	border-color: transparent transparent rgba(224, 88, 226, .7) rgba(224, 88, 226, .7);
+	border-radius: 0 0 0 20%;
+}
+
+.social:active {
 	font-size: 1.5em;
 }
 
@@ -249,6 +274,19 @@ footer {
 	justify-content: space-evenly;
 	align-items: center;
 	height: 100vh;
+	font-size: 3em;
+}
+
+.social-footer {
+	transition: 0.3s ease-in-out;: 
+}
+
+.social-footer:hover {
+	font-size: 3.2em;
+	padding: 0 20% 0 20%
+}
+
+.social-footer:active {
 	font-size: 3em;
 }
 
