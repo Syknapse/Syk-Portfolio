@@ -1,5 +1,8 @@
 $(document).ready();
 
+
+// ********* Section 3 info screen toggle and animation ********** 
+
 $(function() {
     $('.section3-icon1').click(function() {
         $('.section3-info1').toggle().addClass('animated fadeInDown');

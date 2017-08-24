@@ -66,7 +66,7 @@ nav > a {
 	width: 80%;
 	margin: auto;
 	border-radius: 10px;
-	transition: 0.4s linear;
+	transition: 0.3s linear;
 }
 
 nav a:hover {
@@ -83,6 +83,8 @@ nav a:active {
 
 .arrow {
 	display: inline-block;
+	color: rgba(224, 88, 226, .9);
+	text-align: right;
 	/* 	to make span scale */
 	width: 0px; 
 	opacity: 0;
@@ -113,14 +115,69 @@ nav a:hover .arrow {
 	/*border: 1px solid;*/
 }
 
+/* --------- section 1 -------- */
 #section1 {
-	background-color: #42b201;
-	opacity: .5;
+	background-color: rgba(237, 230, 235, .1); /*#42b201*/
+	font-size: 3em;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 20% 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 2fr;
+	align-items: center;
+	grid-template-areas: 
+	    ". . . photo . . ."
+	    ". lin git name twit pen ."
+	    ". blurb blurb blurb blurb blurb .";
 }
 
+.photo {
+	grid-area: photo;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+}
+
+#profile {
+	max-width: 100%;
+	border: 3px solid black;
+	border-radius: 10%;
+}
+
+.name {
+	grid-area: name;
+	display: flex;
+	flex-direction: column;
+}
+
+.social1 {
+	grid-area: lin;
+	font-size: 1.5em;
+}
+
+.social2 {
+	grid-area: git;
+	font-size: 1.5em;
+}
+
+.social3 {
+	grid-area: twit;
+	font-size: 1.5em;
+}
+
+.social4 {
+	grid-area: pen;
+	font-size: 1.5em;
+}
+
+.blurb {
+	grid-area: blurb;
+}
+
+/* --------- section 2 -------- */
 #section2 {
-	background-color: #ced1b8;
-	opacity: .5;
+	background-color: rgba(182, 255, 109, .7); /*#ced1b8*/
 	/* -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;*/
 }
@@ -132,8 +189,7 @@ nav a:hover .arrow {
 
 /* --------- section 3 -------- */
 #section3 {
-	background-color: #783de5;
-	opacity: .5;
+	background-color: rgba(168, 140, 255, .7); /*#783de5*/
 	font-size: 3em;
 	text-align: center;
 	display: grid;
@@ -141,9 +197,9 @@ nav a:hover .arrow {
 	grid-template-rows: repeat(3, 1fr);
 	align-items: center;
 	grid-template-areas: 
-	    ". prg ."
-	    "mus screen tcr"
-	    ". rst .";
+	    ". icon-one ."
+	    "icon-two screen icon-three"
+	    ". icon-four .";
 }
 
 .section3-icon1, .section3-icon2, .section3-icon3, .section3-icon4 {
@@ -151,22 +207,21 @@ nav a:hover .arrow {
 }
 
 .section3-icon1 {
-  grid-area: prg;
+  grid-area: icon-one;
 }
 .section3-icon2 {
-  grid-area: mus;
+  grid-area: icon-two;
 }
 .section3-icon3 {
-  grid-area: tcr;
+  grid-area: icon-three;
 }
 .section3-icon4 {
-  grid-area: rst;
+  grid-area: icon-four;
 }
 
 .section3-info1 {
   grid-area: screen;
   display: none;
-  /*animation-duration: 15s;*/
 }
 .section3-info2 {
   grid-area: screen;
@@ -182,28 +237,23 @@ nav a:hover .arrow {
 }
 
 #section4 {
-	background-color:  #e04387;
-	opacity: .5;
+	background-color:  rgba(255, 96, 104, .7); /*#e04387*/
 }
 
 #section5 {
-	background-color: #47adc1;
-	opacity: .5;
+	background-color: rgba(232, 186, 98, .7); /*#47adc1*/
 }
 
 /*waypoint*/
-
-.waypointed1, .waypointed2 {
-	/*width: 500px;
-	height: 500px;
-	background-color: blue;*/
-	transition: 2.6s;
-}
 
 /*.section3-waypoint-panel {
 	transition: .6s;
 	opacity: 0;
 }*/
+.animate-waypoint {
+	opacity: 1;
+}
+
 .section3-waypoint-left {
 	transition: .6s;
 	opacity: 0;
@@ -213,6 +263,11 @@ nav a:hover .arrow {
 	opacity: 0;
 }
 
-.animate-waypoint {
-	opacity: 1;
+
+
+.waypointed1, .waypointed2 {
+	/*width: 500px;
+	height: 500px;
+	background-color: blue;*/
+	transition: 2.6s;
 }
