@@ -218,6 +218,127 @@ nav a:hover .arrow {
 /* --------- section 2 -------- */
 #section2 {
 	background-color: rgba(182, 255, 109, .7); /*#ced1b8*/
+	padding: 5px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: 
+		"p-one p-two p-three"
+		"p-four p-five p-six"
+		"p-seven p-eight p-nine";
+}
+
+.projects {
+	margin: 5px;
+	position: relative;
+	
+	/*a- image to cover 100% all the time*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.project-image {
+	/*b- image to cover 100% all the time*/
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+	transition: filter .7s, transform .9s;
+}
+
+.description {
+	/*text visible only on hover*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .6s, visibility .3s;
+
+	color: white;
+	padding: 20px;
+	font-size: 1.5vmin;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.description a h3 {
+	text-transform: uppercase;
+	letter-spacing: .5vmin;
+}
+
+.description > p {
+	font-size: 1.6vmin;
+	font-weight: bold;
+	color: black;
+	margin: auto auto 2.5% auto;
+}
+
+.git-but {
+	font-size: 2.2vmin;
+	min-width: 100%;
+	border: 1px solid #eee;
+	padding: 2px;
+	border-radius: 10px;
+}
+
+.projects:hover .project-image {
+	filter: blur(50px);
+	transform: scale(1.5);
+}
+
+.projects:hover {
+	-webkit-box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
+	-moz-box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
+	box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
+}
+
+.projects:hover .description {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.project-one {
+	grid-area: p-one;
+}
+
+.project-two {
+	grid-area: p-two;
+}
+
+.project-three {
+	grid-area: p-three;
+}
+
+.project-four {
+	grid-area: p-four;
+}
+
+.project-five {
+	grid-area: p-five;
+}
+
+.project-six {
+	grid-area: p-six;
+}
+
+.project-seven {
+	grid-area: p-seven;
+}
+
+.project-eight {
+	grid-area: p-eight;
+}
+
+.project-nine {
+	grid-area: p-nine;
 }
 
 /* --------- section 3 -------- */
