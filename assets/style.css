@@ -40,22 +40,10 @@ nav {
 }
 /*create .active class*/
 
-#b1 {
-	grid-area: syk;
-}
-
-#b2 {
-	grid-area: por;
-}
-
-#b3 {
-	grid-area: exp;
-}
-
-#b4 {
-	grid-area: skl;
-}
-
+#b1 {grid-area: syk;}
+#b2 {grid-area: por;}
+#b3 {grid-area: exp;}
+#b4 {grid-area: skl;}
 #b5 {
 	grid-area: life;
 	margin-bottom: 30px;
@@ -165,35 +153,15 @@ nav a:hover .arrow {
 	flex-direction: column;
 	font-size: 3vmin;
 	padding: 0 1px 15px 1px;
-	transition: 0.3s ease;
 }
 
-.name:hover {
-	font-size: 3.1vmin;
-	font-weight: bold;
-}
-
-.social1 {
-	grid-area: lin;
-	font-size: 1.5em;
-}
-
-.social2 {
-	grid-area: git;
-	font-size: 1.5em;
-}
-
-.social3 {
-	grid-area: twit;
-	font-size: 1.5em;
-}
-
-.social4 {
-	grid-area: pen;
-	font-size: 1.5em;
-}
+.social1 {grid-area: lin;}
+.social2 {grid-area: git;}
+.social3 {grid-area: twit;}
+.social4 {grid-area: pen;}
 
 .social {
+	font-size: 1.5em;
 	border: 2px solid rgba(237, 230, 235, .1);
 	border-radius: 27%;
 	transition: 0.3s ease-in-out;
@@ -304,42 +272,15 @@ nav a:hover .arrow {
 	opacity: 1;
 }
 
-
-.project-one {
-	grid-area: p-one;
-}
-
-.project-two {
-	grid-area: p-two;
-}
-
-.project-three {
-	grid-area: p-three;
-}
-
-.project-four {
-	grid-area: p-four;
-}
-
-.project-five {
-	grid-area: p-five;
-}
-
-.project-six {
-	grid-area: p-six;
-}
-
-.project-seven {
-	grid-area: p-seven;
-}
-
-.project-eight {
-	grid-area: p-eight;
-}
-
-.project-nine {
-	grid-area: p-nine;
-}
+.project-one {grid-area: p-one;}
+.project-two {grid-area: p-two;}
+.project-three {grid-area: p-three;}
+.project-four {grid-area: p-four;}
+.project-five {grid-area: p-five;}
+.project-six {grid-area: p-six;}
+.project-seven {grid-area: p-seven;}
+.project-eight {grid-area: p-eight;}
+.project-nine {grid-area: p-nine;}
 
 /* --------- section 3 -------- */
 #section3 {
@@ -381,16 +322,40 @@ nav a:hover .arrow {
 
 /* --------- section 4 -------- */
 #section4 {
-	background-color:  rgba(255, 96, 104, .7); /*#e04387*/
+	/*background-color:  rgba(255, 96, 104, .7); *//*#e04387*/
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	justify-items: center;
+	align-items: center;
+	grid-template-areas: 
+		"c-one about-me c-four"
+		"c-two scrn c-five"
+		"c-three scrn c-six"
+		"...... scrn ......";
 }
 
-/* --------- section 5 -------- */
-#section5 {
-	background-color: rgba(232, 186, 98, .7); /*#47adc1*/
+.me {grid-area: about-me;}
+.city-one {grid-area: c-one;}
+.city-two {grid-area: c-two;}
+.city-three {grid-area: c-three;}
+.city-four {grid-area: c-four;}
+.city-five {grid-area: c-five;}
+.city-six {grid-area: c-six;}
+
+.about-info {grid-area: scrn;}
+
+#section4 > div {
+	border: 1px solid black;
+}
+
+.map img {
+	border: 1px solid blue;
 }
 
 /* --------- footer -------- */
 footer {
+	background-color: rgba(237, 230, 235, .1);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
