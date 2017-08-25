@@ -145,8 +145,6 @@ nav a:hover .arrow {
 	box-shadow: -5px 5px 8px -2px rgba(0,0,0,0.3);
 }
 
-/*create tool tip "prefer email or checking out my instagram"*/
-
 .name {
 	grid-area: name;
 	display: flex;
@@ -185,7 +183,7 @@ nav a:hover .arrow {
 
 /* --------- section 2 -------- */
 #section2 {
-	background-color: rgba(182, 255, 109, .7); /*#ced1b8*/
+	background-color: rgba(182, 255, 109, .1); /*#ced1b8*/
 	padding: 5px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -284,7 +282,7 @@ nav a:hover .arrow {
 
 /* --------- section 3 -------- */
 #section3 {
-	background-color: rgba(168, 140, 255, .7); /*#783de5*/
+	background-color: rgba(168, 140, 255, .1); /*#783de5*/
 	font-size: 3em;
 	text-align: center;
 	display: grid;
@@ -322,7 +320,7 @@ nav a:hover .arrow {
 
 /* --------- section 4 -------- */
 #section4 {
-	/*background-color:  rgba(255, 96, 104, .7); *//*#e04387*/
+	/*background-color:  rgba(255, 96, 104, .1);*/ /*#e04387*/
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows: repeat(4, 1fr);
@@ -335,7 +333,12 @@ nav a:hover .arrow {
 		"...... scrn ......";
 }
 
-.me {grid-area: about-me;}
+.me {
+	grid-area: about-me;
+	width: 60%;
+	text-align: center;
+	font-size: 3vmin;
+}
 .city-one {grid-area: c-one;}
 .city-two {grid-area: c-two;}
 .city-three {grid-area: c-three;}
@@ -343,14 +346,39 @@ nav a:hover .arrow {
 .city-five {grid-area: c-five;}
 .city-six {grid-area: c-six;}
 
-.about-info {grid-area: scrn;}
-
-#section4 > div {
-	border: 1px solid black;
+.about-info {
+	grid-area: scrn;
+	font-size: 3vmin;
+	text-align: justify;
+	height: 96%;
+	width: 95%;
+	padding: 5px;
+	margin-bottom: 30px;
+	background-color: rgba(200, 200, 200, .7);
+	border: 1px solid rgba(200, 200, 200, .9);
 }
 
-.map img {
-	border: 1px solid blue;
+/*#section4 > div {
+	padding: 10px;
+}*/
+
+.about {
+	padding: 15px;
+/*	margin: auto;
+*/}
+
+.map img, .me {
+	max-width: 90%;
+	border: 3px solid #555;
+	filter: grayscale(80%);
+	transition: .4s;
+}
+
+.map img:hover, .me:hover {
+	border-radius: 100px;
+	transform: scale(1.1);
+	filter: grayscale(60%);
+
 }
 
 /* --------- footer -------- */
