@@ -439,24 +439,12 @@ footer {
 
 /*waypoint*/
 
-/*.section3-waypoint-panel {
-	transition: .6s;
-	opacity: 0;
-}*/
 .animate-waypoint {
 	opacity: 1;
 }
 
-.section3-waypoint-left, .section3-waypoint-right, .social-waypoint-left, .social-waypoint-right {
+.section3-waypoint-left, .section3-waypoint-right, .social-waypoint-left, .social-waypoint-right{
 	transition: .6s;
 	opacity: 0;
 }
 
-
-
-.waypointed1, .waypointed2 {
-	/*width: 500px;
-	height: 500px;
-	background-color: blue;*/
-	transition: 2.6s;
-}

@@ -78,7 +78,8 @@ $(function() {
 
 var socialLeft = $('.social-waypoint-left');
 var socialRight = $('.social-waypoint-right');
-var animatePanel = $('.section3-waypoint-panel');
+var projectLeft = $('.project-waypoint-left');
+var projectRight = $('.project-waypoint-right');
 var sectionThreeLeft = $('.section3-waypoint-left');
 var sectionThreeRight = $('.section3-waypoint-right');
 
@@ -92,9 +93,16 @@ socialRight.waypoint(function (){
   socialRight.addClass('animate-waypoint animated fadeInRight');
 }, {offset: '50%'});
 
-// animatePanel.waypoint(function (){
-//   animatePanel.addClass('animate-waypoint animated fadeInUp');
+
+// section three
+// projectLeft.waypoint(function (){
+//   projectLeft.addClass('animate-waypoint animated fadeInLeft');
 // }, {offset: '50%'});
+
+// projectRight.waypoint(function (){
+//   projectRight.addClass('animate-waypoint animated fadeInRight');
+// }, {offset: '50%'});
+
 
 // section three
 sectionThreeLeft.waypoint(function (){
