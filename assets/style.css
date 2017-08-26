@@ -312,15 +312,15 @@ nav a:hover .arrow {
   font-size: 1.5em;
 }
 
-.section3-info1, .section3-info2, .section3-info3, .section3-info4 {
-  grid-area: screen;
-  display: none;
+#section3 .section3-info {
+	grid-area: screen;
+  	display: none;
+	animation-duration: .3s;
 }
-
 
 /* --------- section 4 -------- */
 #section4 {
-	/*background-color:  rgba(255, 96, 104, .1);*/ /*#e04387*/
+	background-color:  rgba(255, 96, 104, .1); /*#e04387*/
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows: repeat(4, 1fr);
@@ -346,17 +346,45 @@ nav a:hover .arrow {
 .city-five {grid-area: c-five;}
 .city-six {grid-area: c-six;}
 
+.about-container {
+	grid-area: scrn;
+	border: 1px solid rgba(200, 200, 200, .3);
+	height: 98%;
+	width: 97%;
+	padding: 10px;
+	margin-bottom: 12vh;
+	background-color: rgba(255, 96, 104, .12);
+	-webkit-box-shadow: inset 2px 2px 17px 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 2px 2px 17px 5px rgba(0,0,0,0.5);
+	box-shadow: inset 2px 2px 17px 5px rgba(0,0,0,0.5);
+}
+
 .about-info {
 	grid-area: scrn;
 	font-size: 3vmin;
-	text-align: justify;
+	text-align: center;
 	height: 96%;
 	width: 95%;
-	padding: 5px;
-	margin-bottom: 30px;
-	background-color: rgba(200, 200, 200, .7);
-	border: 1px solid rgba(200, 200, 200, .9);
+	padding: 10px;
+	margin-bottom: 12vh;
+	display: none;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: stretch;*/
 }
+#section4 .about-info {
+	animation-duration: .3s;
+}
+/*.info-show-animation {
+	animation: appearance;
+	animation-duration: 2s;
+}
+
+@keyframes appearance {
+	{background-color: black;}
+}*/
+
 
 /*#section4 > div {
 	padding: 10px;
@@ -366,6 +394,11 @@ nav a:hover .arrow {
 	padding: 15px;
 /*	margin: auto;
 */}
+
+.map {
+	max-width: 90%;
+	text-align: center;
+}
 
 .map img, .me {
 	max-width: 90%;

@@ -28,6 +28,51 @@ $(function() {
     });                        
 });
 
+// ********* Section 4 info screen toggle and animation ********** 
+
+$(function() {
+    $('.me').click(function() {
+        $('.about-info1').toggle().addClass('animated zoomIn');
+        $('.about-info2, .about-info3, .about-info4, about-info5, .about-info6, .about-info7').hide();
+    });                        
+});
+$(function() {
+    $('.city-one').click(function() {
+        $('.about-info2').toggle().addClass('animated zoomIn');
+        $('.about-info1, .about-info3, .about-info4, about-info5, .about-info6, .about-info7').hide();
+    });                        
+});
+$(function() {
+    $('.city-two').click(function() {
+        $('.about-info3').toggle().addClass('animated zoomIn');
+        $('.about-info1, .about-info2, .about-info4, about-info5, .about-info6, .about-info7').hide();
+    });                        
+});
+$(function() {
+    $('.city-three').click(function() {
+        $('.about-info4').toggle().addClass('animated zoomIn');
+        $('.about-info1, .about-info2, .about-info3, about-info5, .about-info6, .about-info7').hide();
+    });                        
+});
+$(function() {
+    $('.city-four').click(function() {
+        $('.about-info5').toggle().addClass('animated zoomIn');
+        $('.about-info1, .about-info2, .about-info3, about-info4, .about-info6, .about-info7').hide();
+    });                        
+});
+$(function() {
+    $('.city-five').click(function() {
+        $('.about-info6').toggle().addClass('animated zoomIn');
+        $('.about-info1, .about-info2, .about-info3, about-info4, .about-info5, .about-info7').hide();
+    });                        
+});
+$(function() {
+    $('.city-six').click(function() {
+        $('.about-info7').toggle().addClass('animated zoomIn');
+        $('.about-info1, .about-info2, .about-info3, about-info4, .about-info5, .about-info6').hide();
+    });                        
+});
+
 
 // ********* Waypoints ********** 
 
@@ -69,6 +114,33 @@ sectionThreeRight.waypoint(function (){
 //    }
   
 // }, {offset: '50%'});
+
+
+
+////// refactoring ////////
+
+// const icons = document.querySelectorAll('.section3-icons');
+// const infos = document.querySelectorAll('section3-info');
+
+// function toggleAndAnimate(){
+//     infos.toggle().addClass('animated fadeInDown');
+//     infos.forEach(info => info.hide());
+//     console.log();
+// }
+// icons.forEach(icon => icon.addEventListener('click', toggleAndAnimate));
+
+//////////
+
+// var icons = document.querySelectorAll('.section3-icons');
+// var infos = document.querySelectorAll('section3-info');
+
+// icons.addEventListener('click', showInfo);
+
+// function showInfo(){
+//     infos.style.display = 'block';
+// }
+// alert('booo');
+
 
 
 
