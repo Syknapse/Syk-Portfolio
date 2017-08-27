@@ -83,6 +83,17 @@ var projectRight = $('.project-waypoint-right');
 var sectionThreeLeft = $('.section3-waypoint-left');
 var sectionThreeRight = $('.section3-waypoint-right');
 
+// nav active class
+$('#section1').waypoint(function (){
+    $('nav a').removeClass('active-nav');
+    $('#b1').addClass('active-nav');
+});
+
+$('#section2').waypoint(function (){
+    $('nav a').removeClass('active-nav');
+    $('#b2').addClass('active-nav');
+});
+
 
 // section one
 socialLeft.waypoint(function (){
