@@ -189,7 +189,7 @@ nav a:hover .arrow {
 
 /* --------- section 2 -------- */
 #section2 {
-	background-color: rgba(182, 255, 109, .9); /*#ced1b8*/
+	background-color: rgba(168, 140, 255, .2);
 	padding: 5px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -289,7 +289,7 @@ nav a:hover .arrow {
 
 /* --------- section 3 -------- */
 #section3 {
-	background-color: rgba(168, 140, 255, .9); /*#783de5*/
+	background-color: rgba(168, 140, 255, .3);
 	font-size: 4.7em;
 	text-align: center;
 	display: grid;
@@ -320,7 +320,7 @@ nav a:hover .arrow {
 
 /* --------- section 4 -------- */
 #section4 {
-	background-color:  rgba(255, 96, 104, .9); /*#e04387*/
+	background-color: rgba(168, 140, 255, .2);
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-rows: repeat(4, 1fr);
@@ -335,7 +335,7 @@ nav a:hover .arrow {
 
 .me {
 	grid-area: about-me;
-	background-color: rgba(255, 96, 104, .4);
+	background-color: rgba(168, 140, 255, .1);
 	width: 60%;
 	text-align: center;
 	font-size: 3vmin;
@@ -351,30 +351,18 @@ nav a:hover .arrow {
 .city-five {grid-area: c-five;}
 .city-six {grid-area: c-six;}
 
-/*.about-container {
-	grid-area: scrn;
-	border: 1px solid rgba(200, 200, 200, .3);
-	height: 98%;
-	width: 97%;
-	padding: 10px;
-	margin-bottom: 12vh;
-	background-color: rgba(255, 96, 104, 1);
-	-webkit-box-shadow: inset 2px 2px 17px 5px rgba(landing,0,0.5);
-	-moz-box-shadow: inset 2px 2px 17px 5px rgba(0,0,0,0.5);
-	box-shadow: inset 2px 2px 17px 5px rgba(0,0,0,0.5);
-}*/
-
 .about-info {
 	grid-area: scrn;
 	font-size: 2.5vmin;
+	line-height: 4.2vmin;
 	text-align: justify;
 	height: 96%;
 	width: 95%;
 	padding: 5%;
 	margin: auto;
 	display: none;
-/*	overflow-y: auto;
-*/}
+	overflow-y: auto;
+}
 
 .about-info1 ul {
 	text-align: justify;
@@ -453,3 +441,43 @@ medium tablet 1920	1080
 small tablet 1024	600
 i7 750	1334
 bq 720 x 1280*/
+
+/*-------medium--------*/
+
+@media screen and (max-width: 1366px){
+
+}
+
+@media screen and (max-width: 1080px){
+	.description {
+		padding: 10px;
+		font-size: 2vmin;
+	}
+	#section3 .section3-info {
+		font-size: 3vmin;
+	}
+	.about-info {
+		font-size: 2.5vmin;
+		line-height: 3.6vmin;
+	}
+}
+
+/*-------small--------*/
+
+@media screen and (max-width: 1080px){
+	.description {
+		padding: 7px;
+		font-size: 1.8vmin;
+	}
+	#section3 .section3-info {
+		font-size: 2.8vmin;
+	}
+	.about-info {
+		font-size: 2.2vmin;
+		line-height: 3.2vmin;
+	}
+}
+
+@media screen and (max-width: 760px){
+
+}
