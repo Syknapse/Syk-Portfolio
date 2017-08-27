@@ -203,17 +203,13 @@ sectionThreeRight.waypoint(function (){
   sectionThreeRight.addClass('animate-waypoint animated fadeInRight');
 }, {offset: '73%'});
 
-// var animateIt2 = $('.waypointed2');
-// animateIt1.waypoint(function (direction){
-//     if (direction == 'down') {
-//        animateIt1.addClass('animate-waypoint animated fadeInLeft'); 
-//    } else {
-//         animateIt1.removeClass('animate-waypoint animated fadeInLeft');
-//    }
-  
-// }, {offset: '50%'});
+////////// Nav hide show ///////////////////
 
-
+$(function(){
+    $('.name').on('click', function(){
+        $('.nav-menu').toggleClass('.open');
+    });
+});
 
 ////// refactoring ////////
 
