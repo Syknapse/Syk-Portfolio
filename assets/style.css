@@ -232,7 +232,8 @@ nav a:hover .arrow {
 
 	color: white;
 	padding: 20px;
-	font-size: 1.5vmin;
+	font-size: 2.1vmin;
+	background-color: rgba(100, 100, 100, .2);
 
 	display: flex;
 	flex-direction: column;
@@ -246,7 +247,7 @@ nav a:hover .arrow {
 }
 
 .description > p {
-	font-size: 1.6vmin;
+	font-size: 1.9vmin;
 	font-weight: bold;
 	color: black;
 	margin: auto auto 2.5% auto;
@@ -314,6 +315,7 @@ nav a:hover .arrow {
 	grid-area: screen;
   	display: none;
 	animation-duration: .3s;
+	font-size: 3.5vmin;
 }
 
 /* --------- section 4 -------- */
@@ -339,6 +341,7 @@ nav a:hover .arrow {
 	font-size: 3vmin;
 	max-width: 90%;
 	border: 3px solid #555;
+	margin-bottom: 15px;
 	transition: .4s;
 }
 .city-one {grid-area: c-one;}
@@ -348,7 +351,7 @@ nav a:hover .arrow {
 .city-five {grid-area: c-five;}
 .city-six {grid-area: c-six;}
 
-.about-container {
+/*.about-container {
 	grid-area: scrn;
 	border: 1px solid rgba(200, 200, 200, .3);
 	height: 98%;
@@ -359,26 +362,23 @@ nav a:hover .arrow {
 	-webkit-box-shadow: inset 2px 2px 17px 5px rgba(landing,0,0.5);
 	-moz-box-shadow: inset 2px 2px 17px 5px rgba(0,0,0,0.5);
 	box-shadow: inset 2px 2px 17px 5px rgba(0,0,0,0.5);
-}
+}*/
 
 .about-info {
 	grid-area: scrn;
 	font-size: 2.5vmin;
-	font-weight: 600;
-	text-align: center;
+	text-align: justify;
 	height: 96%;
 	width: 95%;
-	padding: 10px;
-	/*margin-bottom: 12vh;*/
+	padding: 5%;
+	margin: auto;
 	display: none;
-}
+/*	overflow-y: auto;
+*/}
 
-/*div .about-info .about-display {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-}*/
+.about-info1 ul {
+	text-align: justify;
+}
 
 #section4 .about-info {
 	animation-duration: .3s;
