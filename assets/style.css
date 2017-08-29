@@ -294,11 +294,11 @@ nav a:hover .arrow {
 /* --------- section 3 -------- */
 #section3 {
 	background-color: rgba(168, 140, 255, .3);
-	font-size: 4.7em;
+	font-size: 5.5vmin;
 	text-align: center;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 1fr 50% 1fr;
+	grid-template-rows: 1fr 50% 1fr;
 	align-items: center;
 	grid-template-areas: 
 	    ". icon-one ."
@@ -318,6 +318,7 @@ nav a:hover .arrow {
 #section3 .section3-info {
 	grid-area: screen;
   	display: none;
+  	overflow: hidden;
 	animation-duration: .3s;
 	font-size: 3.5vmin;
 }
@@ -452,9 +453,11 @@ bq 720 x 1280*/
 		padding: 10px;
 		font-size: 2vmin;
 	}
-	#section3 .section3-info {
-		font-size: 3vmin;
-	}
+
+	/*#section3 .section3-info {
+		font-size: 2.5vmin;
+	}*/
+	
 	.about-info {
 		font-size: 2.5vmin;
 		line-height: 3.6vmin;
@@ -462,17 +465,8 @@ bq 720 x 1280*/
 }
 
 @media screen and (max-width: 980px) {
-	.description {
-		padding: 7px;
-		font-size: 1.8vmin;
-	}
-	#section3 .section3-info {
-		font-size: 2.8vmin;
-	}
-	.about-info {
-		font-size: 2.2vmin;
-		line-height: 3.2vmin;
-	}
+	
+	/*-----section 2-------*/
 	#section2 {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, 1fr);
@@ -524,6 +518,19 @@ bq 720 x 1280*/
 		justify-content: flex-start;
 		align-items: center;
 	}
+
+	/*-----section 3-------*/
+	#section3 .section3-info {
+		font-size: 4.4vmin;
+	}
+
+	/*-----section 4-------*/
+	.about-info {
+		font-size: 2.2vmin;
+		line-height: 3.2vmin;
+	}
+
+	/*----- NAV-------*/
 	.nav-menu {
 		position: fixed;
   		top: 0;
