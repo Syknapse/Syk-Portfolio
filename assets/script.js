@@ -185,16 +185,6 @@ socialRight.waypoint(function (){
 
 
 // section three
-// projectLeft.waypoint(function (){
-//   projectLeft.addClass('animate-waypoint animated fadeInLeft');
-// }, {offset: '50%'});
-
-// projectRight.waypoint(function (){
-//   projectRight.addClass('animate-waypoint animated fadeInRight');
-// }, {offset: '50%'});
-
-
-// section three
 sectionThreeLeft.waypoint(function (){
   sectionThreeLeft.addClass('animate-waypoint animated fadeInLeft');
 }, {offset: '50%'});
@@ -207,7 +197,7 @@ sectionThreeRight.waypoint(function (){
 
 $(function(){
     $('.name').on('click', function(){
-        $('.nav-menu').toggleClass('.open');
+        $('.nav-menu').toggleClass('open');
     });
 });
 

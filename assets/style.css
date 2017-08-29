@@ -536,15 +536,15 @@ bq 720 x 1280*/
 	}
 	.nav-menu {
 		position: fixed;
-		top: 0;
+  		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		transform: translateX(-100%);
+    	transform: translateX(-100%);
 		transition: transform .6s ease;
 	}
-	.nav-menu .open {
-		transform: translateX(0);
+	.open {
+		transform: translateX(-80%);
 	}
 	.sections {
 		position: static;
