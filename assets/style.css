@@ -235,6 +235,7 @@ nav a:hover .arrow {
 	transition: opacity .6s, visibility .3s;
 
 	color: white;
+	min-width: 100%;
 	padding: 20px;
 	font-size: 2.1vmin;
 	background-color: rgba(100, 100, 100, .2);
@@ -449,10 +450,10 @@ bq 720 x 1280*/
 
 
 @media screen and (max-width: 1080px){
-	.description {
+	/*.description {
 		padding: 10px;
 		font-size: 2vmin;
-	}
+	}*/
 
 	/*#section3 .section3-info {
 		font-size: 2.5vmin;
@@ -477,9 +478,11 @@ bq 720 x 1280*/
 
 	/*-----section 2-------*/
 	#section2 {
+		border-top: 1px solid #999;
+		border-bottom: 1px solid #999;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, 1fr);
-		height: 200vh;
+		height: 300vh;
 		grid-template-areas:
 			"p-one p-one"
 			"p-two p-three"
@@ -488,27 +491,23 @@ bq 720 x 1280*/
 			"p-eight p-nine";
 	}
 	.projects {
-		margin: 5px;
 		position: static;
 		
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
 	}
-
 	.project-image {
 		flex-shrink: 0;
-		filter: none;
-		transform: none;
 		min-height: 0%;
 		min-width: 0%;
 		height: 50%;
 	}
-
-	#section2 .projects {
-		display: flex;
-		flex-direction: column;
+	.projects:hover .project-image {
+		filter: none;
+		transform: none;
 	}
 	.description {
 		position: relative;
@@ -517,15 +516,31 @@ bq 720 x 1280*/
 		opacity: 1;
 		transition: none;
 
-		color: white;
+		color: black;
 		padding: 5px;
-		font-size: 1.5vmin;
-		background-color: rgba(0, 0, 0, .2);
+		font-size: 16px;
+		background-color: transparent;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
+	}
+
+	.description > p, .git-but {
+		font-size: 10px;
+	}
+	.git-but {
+		border: 1px solid black;
+		min-width: 60%;
+		width: 60%;
+	}
+	.description a p strong {
+		display: none;
+	}
+	.description a:first-child i {
+		font-weight: bold;
+		font-size: 19px;
 	}
 
 	/*-----section 3-------*/
@@ -534,6 +549,10 @@ bq 720 x 1280*/
 	}
 
 	/*-----section 4-------*/
+	#section4 {
+		border-top: 1px solid #999;
+		border-bottom: 1px solid #999;
+	}
 	.about-info {
 		font-size: 2.2vmin;
 		line-height: 3.2vmin;
