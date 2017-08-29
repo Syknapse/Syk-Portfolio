@@ -353,7 +353,7 @@ nav a:hover .arrow {
 	line-height: 4.2vmin;
 	text-align: justify;
 	height: 96%;
-	width: 95%;
+	max-width: 95%;
 	margin: auto;
 	padding: 20px;
 	display: none;
