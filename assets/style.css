@@ -115,7 +115,7 @@ nav a:hover .arrow {
 	font-size: 3em;
 	text-align: center;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 20% 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 35% 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 2fr;
 	align-items: center;
 	grid-template-areas: 
@@ -137,7 +137,7 @@ nav a:hover .arrow {
 }
 
 #profile {
-	max-width: 90%;
+	max-width: 65%;
 	border-radius: 20% 0 20% 0;
 	transition: 0.8s ease-out;
 	filter: grayscale(100%) brightness(190%);
@@ -169,7 +169,7 @@ nav a:hover .arrow {
 .social4 {grid-area: pen;}
 
 .social {
-	font-size: 1.5em;
+	font-size: 3.5vmin;
 	border: 2px solid rgba(237, 230, 235, .1);
 	border-radius: 27%;
 	transition: 0.3s ease-in-out;
@@ -466,6 +466,15 @@ bq 720 x 1280*/
 
 @media screen and (max-width: 980px) {
 	
+	/*-----section 1-------*/
+	.social {
+		font-size: 1em;
+		margin: 10px;
+	}	
+	.name {
+		font-size: .7em;
+	}
+
 	/*-----section 2-------*/
 	#section2 {
 		grid-template-columns: 1fr 1fr;
