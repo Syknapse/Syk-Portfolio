@@ -328,34 +328,24 @@ nav a:hover .arrow {
 #section4 {
 	background-color: rgba(168, 140, 255, .2);
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 20vh 60vh 20vh;
 	justify-items: center;
 	align-items: center;
 	grid-template-areas: 
-		"c-one about-me c-four"
-		"c-two scrn c-five"
-		"c-three scrn c-six"
-		"...... scrn ......";
+		"about scarb bourn bei"
+		"scrn scrn scrn scrn"
+		"grana mad gand skill";
 }
 
-.me {
-	grid-area: about-me;
-	background-color: rgba(168, 140, 255, .1);
-	width: 60%;
-	text-align: center;
-	font-size: 3vmin;
-	max-width: 90%;
-	border: 3px solid #555;
-	margin-bottom: 15px;
-	transition: .4s;
-}
-.city-one {grid-area: c-one;}
-.city-two {grid-area: c-two;}
-.city-three {grid-area: c-three;}
-.city-four {grid-area: c-four;}
-.city-five {grid-area: c-five;}
-.city-six {grid-area: c-six;}
+.me {grid-area: about;}
+.skill {grid-area: skill;}
+.city-one {grid-area: bei;}
+.city-two {grid-area: bourn;}
+.city-three {grid-area: scarb;}
+.city-four {grid-area: gand;}
+.city-five {grid-area: mad;}
+.city-six {grid-area: grana;}
 
 .about-info {
 	grid-area: scrn;
@@ -364,14 +354,18 @@ nav a:hover .arrow {
 	text-align: justify;
 	height: 96%;
 	width: 95%;
-	padding: 5%;
 	margin: auto;
 	display: none;
-	overflow-y: auto;
+	overflow: hidden;
 }
 
-.about-info1 ul {
-	text-align: justify;
+.me, .skill {
+	background-color: rgba(168, 140, 255, .1);
+	text-align: center;
+	font-size: 3vmin;
+	width: 60%;
+	border: 3px solid #555;
+	transition: .4s;
 }
 
 #section4 .about-info {
@@ -395,7 +389,7 @@ nav a:hover .arrow {
 	transition: .4s;
 }
 
-.me:hover {
+.me:hover, .skill:hover {
 	border-radius: 100px;
 	transform: scale(1.1);
 }
@@ -459,10 +453,10 @@ bq 720 x 1280*/
 		font-size: 2.5vmin;
 	}*/
 	
-	.about-info {
+	/*.about-info {
 		font-size: 2.5vmin;
 		line-height: 3.6vmin;
-	}
+	}*/
 }
 
 @media screen and (max-width: 980px) {
@@ -553,10 +547,14 @@ bq 720 x 1280*/
 		border-top: 1px solid #999;
 		border-bottom: 1px solid #999;
 	}
-	.about-info {
+	.about {
+		padding: 2px;
+	}
+	
+	/*.about-info {
 		font-size: 2.2vmin;
 		line-height: 3.2vmin;
-	}
+	}*/
 
 	/*----- NAV-------*/
 	.nav-menu {
