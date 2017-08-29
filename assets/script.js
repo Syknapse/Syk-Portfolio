@@ -196,7 +196,7 @@ sectionThreeRight.waypoint(function (){
 ////////// Nav hide show ///////////////////
 
 $(function(){
-    $('.nav-btn').on('click', function(){
+    $('.nav-btn, #b1, #b2, #b3, #b4, #b5').on('click', function(){
         $('.nav-menu').toggleClass('open');
     });
 });

@@ -446,11 +446,6 @@ small tablet 1024	600
 i7 750	1334
 bq 720 x 1280*/
 
-/*-------medium--------*/
-
-/*@media screen and (max-width: 1366px){
-
-}*/
 
 @media screen and (max-width: 1080px){
 	.description {
@@ -466,9 +461,7 @@ bq 720 x 1280*/
 	}
 }
 
-/*-------small--------*/
-
-@media screen and (max-width: 980px){
+@media screen and (max-width: 980px) {
 	.description {
 		padding: 7px;
 		font-size: 1.8vmin;
@@ -480,19 +473,16 @@ bq 720 x 1280*/
 		font-size: 2.2vmin;
 		line-height: 3.2vmin;
 	}
-}
-
-@media screen and (max-width: 860px) {
 	#section2 {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, 1fr);
 		height: 200vh;
 		grid-template-areas:
-			"p-one p-two"
-			"p-three p-four"
-			"p-five p-six"
-			"p-seven p-eight"
-			"p-nine .";
+			"p-one p-one"
+			"p-two p-three"
+			"p-four p-five"
+			"p-six p-seven"
+			"p-eight p-nine";
 	}
 	.projects {
 		margin: 5px;
@@ -520,10 +510,6 @@ bq 720 x 1280*/
 	.description {
 		position: relative;
 		height: 50%;
-		/*top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;*/
 		visibility: visible;
 		opacity: 1;
 		transition: none;
@@ -554,10 +540,6 @@ bq 720 x 1280*/
 	}
 	.nav-btn {
 		display: block;
-		/*position: absolute;
-		top: 0;
-		right: 0;*/
-
 		position: fixed;
 		right: 0;
 		top: 5%;
@@ -609,3 +591,17 @@ bq 720 x 1280*/
 		width: 100%;
 	}
 }
+
+/*@media screen and (max-width: 980px){
+	.description {
+		padding: 7px;
+		font-size: 1.8vmin;
+	}
+	#section3 .section3-info {
+		font-size: 2.8vmin;
+	}
+	.about-info {
+		font-size: 2.2vmin;
+		line-height: 3.2vmin;
+	}
+}*/
