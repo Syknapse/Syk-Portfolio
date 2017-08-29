@@ -444,9 +444,9 @@ bq 720 x 1280*/
 
 /*-------medium--------*/
 
-@media screen and (max-width: 1366px){
+/*@media screen and (max-width: 1366px){
 
-}
+}*/
 
 @media screen and (max-width: 1080px){
 	.description {
@@ -478,7 +478,7 @@ bq 720 x 1280*/
 	}
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 860px) {
 	#section2 {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, 1fr);
