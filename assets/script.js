@@ -1,6 +1,6 @@
 $(document).ready();
 
-
+// ****************************** for refactoring ********************
 // ********* Section 3 info screen toggle and animation ********** 
 
 $(function() {
@@ -214,6 +214,9 @@ $(function(){
         $('.nav-menu').toggleClass('open');
     });
 });
+
+// ****************************** ^ for refactoring ^ ********************
+
 
 ////// refactoring ////////
 
