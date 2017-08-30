@@ -30,48 +30,56 @@ $(function() {
 
 // ********* Section 4 info screen toggle and animation ********** 
 
+//about me
 $(function() {
     $('.me').click(function() {
         $('.about-info1').toggle().addClass('animated zoomIn');
         $('.about-info2, .about-info3, .about-info4, .about-info5, .about-info6, .about-info7, .about-info8').hide();
     });                        
 });
+//Gandia
 $(function() {
-    $('.city-one').click(function() {
+    $('.city-four').click(function() {
         $('.about-info2').toggle().addClass('animated zoomIn');
         $('.about-info1, .about-info3, .about-info4, .about-info5, .about-info6, .about-info7, .about-info8').hide();
     });                        
 });
+//Madrid
 $(function() {
-    $('.city-two').click(function() {
+    $('.city-five').click(function() {
         $('.about-info3').toggle().addClass('animated zoomIn');
         $('.about-info1, .about-info2, .about-info4, .about-info5, .about-info6, .about-info7, .about-info8').hide();
     });                        
 });
+//Granada
 $(function() {
-    $('.city-three').click(function() {
+    $('.city-six').click(function() {
         $('.about-info4').toggle().addClass('animated zoomIn');
         $('.about-info1, .about-info2, .about-info3, .about-info5, .about-info6, .about-info7, .about-info8').hide();
     });                        
 });
+//Scarborough
 $(function() {
-    $('.city-four').click(function() {
+    $('.city-three').click(function() {
         $('.about-info5').toggle().addClass('animated zoomIn');
         $('.about-info1, .about-info2, .about-info3, .about-info4, .about-info6, .about-info7, .about-info8').hide();
     });                        
 });
+//Bournemouth
 $(function() {
-    $('.city-five').click(function() {
+    $('.city-two').click(function() {
         $('.about-info6').toggle().addClass('animated zoomIn');
         $('.about-info1, .about-info2, .about-info3, .about-info4, .about-info5, .about-info7, .about-info8').hide();
     });                        
 });
+//Beirut
 $(function() {
-    $('.city-six').click(function() {
+    $('.city-one').click(function() {
         $('.about-info7').toggle().addClass('animated zoomIn');
         $('.about-info1, .about-info2, .about-info3, .about-info4, .about-info5, .about-info6, .about-info8').hide();
     });                        
 });
+//Skills
 $(function() {
     $('.skill').click(function() {
         $('.about-info8').toggle().addClass('animated zoomIn');
