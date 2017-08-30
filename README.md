@@ -1,5 +1,7 @@
-<h1><a href="https://syknapse.github.io/Syk-Portfolio/">Syk Houdeib <br> portfolio page</a></h1>
-<img src="https://user-images.githubusercontent.com/29199184/29871605-b4c1ee38-8d8c-11e7-95a2-032e1dd39264.png">
+<h1><a href="https://syknapse.github.io/Syk-Portfolio/">Syk Houdeib</a></h1>
+<h2>Portfolio Page</h2>
+
+<a href="https://syknapse.github.io/Syk-Portfolio/"><img src="https://user-images.githubusercontent.com/29199184/29871605-b4c1ee38-8d8c-11e7-95a2-032e1dd39264.png"></a>
 <p>My first portfolio page. Created from scratch.</p>
 
 <h3>Technologies Used</h3>
@@ -22,4 +24,4 @@
 	<li>Two sections with a central "screen area", clicking on the images and icons shows information related to the item in the screen area.</li>
 </ul>
 
-<img src="https://user-images.githubusercontent.com/29199184/29871659-e4b78260-8d8c-11e7-951f-c44391987e3b.png">
+<a href="https://syknapse.github.io/Syk-Portfolio/"><img src="https://user-images.githubusercontent.com/29199184/29871659-e4b78260-8d8c-11e7-951f-c44391987e3b.png"></a>
