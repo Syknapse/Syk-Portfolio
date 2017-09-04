@@ -62,6 +62,7 @@ nav > a {
 	height: 50px;
 	width: 80%;
 	margin: auto;
+	-webkit-transition: 0.3s linear;
 	transition: 0.3s linear;
 }
 
@@ -83,6 +84,7 @@ nav a:active {
 	/* 	to make span scale */
 	width: 0px; 
 	opacity: 0;
+	-webkit-transition: 0.3s linear;
 	transition: 0.3s linear;
 }
 
@@ -129,6 +131,10 @@ nav a:hover .arrow {
 	grid-area: photo;
 	justify-self: center;
 	margin-top: 10%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -140,6 +146,7 @@ nav a:hover .arrow {
 #profile {
 	max-width: 65%;
 	border-radius: 20% 0 20% 0;
+	-webkit-transition: 0.8s ease-out;
 	transition: 0.8s ease-out;
 	filter: grayscale(100%) brightness(190%);
 	-webkit-box-shadow: -1px 1px 8px -2px rgba(0,0,0,0.3);
@@ -158,6 +165,10 @@ nav a:hover .arrow {
 	grid-area: name;
 	align-self: start;
 	margin-top: 18px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	font-size: 3vmin;
@@ -173,6 +184,7 @@ nav a:hover .arrow {
 	font-size: 3.5vmin;
 	border: 2px solid rgba(237, 230, 235, .1);
 	border-radius: 27%;
+	-webkit-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
 
@@ -212,6 +224,10 @@ nav a:hover .arrow {
 	position: relative;
 	
 	/*a- image to cover 100% all the time*/
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -223,6 +239,7 @@ nav a:hover .arrow {
 	flex-shrink: 0;
 	min-width: 100%;
 	min-height: 100%;
+	-webkit-transition: filter .7s, transform .9s;
 	transition: filter .7s, transform .9s;
 }
 
@@ -235,6 +252,7 @@ nav a:hover .arrow {
 	right: 0;
 	visibility: hidden;
 	opacity: 0;
+	-webkit-transition: opacity .6s, visibility .3s;
 	transition: opacity .6s, visibility .3s;
 
 	color: white;
@@ -242,6 +260,10 @@ nav a:hover .arrow {
 	font-size: 1.8vmin;
 	background-color: rgba(100, 100, 100, .2);
 
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -270,6 +292,8 @@ nav a:hover .arrow {
 
 .projects:hover .project-image {
 	filter: blur(50px);
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
 	transform: scale(1.5);
 }
 
@@ -370,6 +394,7 @@ nav a:hover .arrow {
 	font-size: 3vmin;
 	width: 60%;
 	border: 3px solid #555;
+	-webkit-transition: .4s;
 	transition: .4s;
 }
 
@@ -391,16 +416,21 @@ nav a:hover .arrow {
 	max-width: 90%;
 	border: 3px solid #555;
 	filter: grayscale(80%);
+	-webkit-transition: .4s;
 	transition: .4s;
 }
 
 .me:hover, .skill:hover {
 	border-radius: 100px;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
 .map img:hover {
 	border-radius: 100px;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 	filter: grayscale(60%);
 }
@@ -408,6 +438,10 @@ nav a:hover .arrow {
 /* --------- footer -------- */
 footer {
 	background-color: rgba(237, 230, 235, .1);
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -416,6 +450,7 @@ footer {
 }
 
 .social-footer {
+	-webkit-transition: 0.3s  cubic-bezier(.03,.94,.83,.09);
 	transition: 0.3s  cubic-bezier(.03,.94,.83,.09);
 }
 
@@ -434,6 +469,7 @@ footer {
 }
 
 .section3-waypoint-left, .section3-waypoint-right, .social-waypoint-left, .social-waypoint-right{
+	-webkit-transition: .6s;
 	transition: .6s;
 	opacity: 0;
 }
@@ -491,6 +527,10 @@ bq 720 x 1280*/
 		border: 1px solid rgba(60, 161, 105, .2);
 		padding-top: 1px;
 		
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -518,6 +558,7 @@ bq 720 x 1280*/
 		height: 50%;
 		visibility: visible;
 		opacity: 1;
+		-webkit-transition: none;
 		transition: none;
 
 		color: black;
@@ -526,6 +567,10 @@ bq 720 x 1280*/
 		min-width: 100%;
 		background-color: transparent;
 
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -567,6 +612,7 @@ bq 720 x 1280*/
 
 	/*----- footer small -------*/
 	.social-footer {
+		-webkit-transition: 0.3s linear;
 		transition: 0.3s linear;
 	}
 	.social-footer:hover {
@@ -583,10 +629,15 @@ bq 720 x 1280*/
 		left: 0;
 		width: 70vw;
 		height: 100vh;
+		-webkit-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
     	transform: translateX(-100%);
+    	-webkit-transition: transform .6s ease;
 		transition: transform .6s ease;
 	}
 	.open {
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
 		transform: translateX(0);
 		background-color: rgba(237, 230, 235, .95);
 		z-index: 1;
@@ -615,6 +666,7 @@ bq 720 x 1280*/
 		position: absolute;
 		top: 24px;
 		margin-left: 15px;
+		-webkit-transition: .3s;
 		transition: .3s;
 	}
 	.nav-btn span:before {
@@ -625,6 +677,7 @@ bq 720 x 1280*/
 		width: 100%;
 		height: 3px;
 		background-color: #666;
+		-webkit-transition: .3s;
 		transition: .3s;
 	}
 	.nav-btn span:after {
@@ -635,6 +688,7 @@ bq 720 x 1280*/
 		width: 100%;
 		height: 3px;
 		background-color: #666;
+		-webkit-transition: .3s;
 		transition: .3s;
 	}
 	nav > a {
