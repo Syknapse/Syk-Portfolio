@@ -209,13 +209,51 @@ nav a:hover .arrow {
 	background-color: rgba(95, 255, 167, .1);
 	padding: 5px;
 	border-bottom: 1px solid rgba(60, 161, 105, .5);
-	display: grid;
+	/*display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-template-areas: 
 		"p-one p-two p-three"
 		"p-four p-five p-six"
-		"p-seven p-eight p-nine";
+		"p-seven p-eight p-nine";*/
+
+	
+}
+
+.h-scroll {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.h-scroll::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+.h-scroll::-webkit-scrollbar {
+	height: 26px;
+	background-color: transparent;
+}
+.h-scroll::-webkit-scrollbar-thumb {
+	/*background-color: rgba(95, 255, 167, .4);*/
+	border-radius: 20px;
+	border: 1px solid rgba(224, 88, 226, .7);
+}
+.h-scroll::-webkit-scrollbar-button {
+	background-color: rgba(95, 255, 167, .1);
+	width: 8em;
+	border-radius: 10px;
+	border: 1px solid rgba(95, 255, 167, .8);
+}
+.h-scroll::-webkit-scrollbar-button:hover {
+	background-color: rgba(95, 255, 167, .4);
 }
 
 .projects {
@@ -231,7 +269,9 @@ nav a:hover .arrow {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	margin: 10vw;
+	height: 50vh;
 }
 
 .project-image {
@@ -240,7 +280,7 @@ nav a:hover .arrow {
 	min-width: 100%;
 	min-height: 100%;
 	-webkit-transition: filter .7s, transform .9s;
-	transition: filter .7s, transform .9s;
+	transition: filter .5s;
 }
 
 .description {
@@ -292,9 +332,9 @@ nav a:hover .arrow {
 
 .projects:hover .project-image {
 	filter: blur(50px);
-	-webkit-transform: scale(1.5);
+	/*-webkit-transform: scale(1.5);
 	-ms-transform: scale(1.5);
-	transform: scale(1.5);
+	transform: scale(1);*/
 }
 
 .projects:hover {
@@ -511,7 +551,7 @@ bq 720 x 1280*/
 	}
 
 	/*-----section 2 small-------*/
-	#section2 {
+	/*#section2 {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, 1fr);
 		height: 300vh;
@@ -521,7 +561,7 @@ bq 720 x 1280*/
 			"p-four p-five"
 			"p-six p-seven"
 			"p-eight p-nine";
-	}
+	}*/
 	.projects {
 		position: static;
 		border: 1px solid rgba(60, 161, 105, .2);
@@ -535,7 +575,7 @@ bq 720 x 1280*/
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 	.project-image {
 		flex-shrink: 0;
