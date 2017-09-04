@@ -209,6 +209,12 @@ nav a:hover .arrow {
 	background-color: rgba(95, 255, 167, .1);
 	padding: 5px;
 	border-bottom: 1px solid rgba(60, 161, 105, .5);
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
 	/*display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
@@ -226,12 +232,16 @@ nav a:hover .arrow {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	align-items: center;
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	margin-left: 40px;
 	margin-right: 40px;
+	/*background-color: rgba(95, 255, 167, .1);*/
+	border: 3px solid rgba(20, 30, 20, .1);
+	height: 80vh;
 }
 
 .h-scroll::-webkit-scrollbar-track {
@@ -247,10 +257,10 @@ nav a:hover .arrow {
 	border: 1px solid rgba(224, 88, 226, .7);
 }
 .h-scroll::-webkit-scrollbar-button {
-	background-color: rgba(95, 255, 167, .1);
-	width: 8em;
-	border-radius: 10px;
-	border: 1px solid rgba(95, 255, 167, .8);
+	/*background-color: rgba(95, 255, 167, .2);*/
+	width: 2em;
+	border-radius: 5px;
+	/*border: 1px solid rgba(95, 255, 167, .8);*/
 }
 .h-scroll::-webkit-scrollbar-button:hover {
 	background-color: rgba(95, 255, 167, .4);
@@ -270,17 +280,26 @@ nav a:hover .arrow {
 	justify-content: center;
 	align-items: center;
 	/*overflow: hidden;*/
-	margin: 10vw;
-	height: 50vh;
+	margin-left: 5vw;
+	height: 60vh;
 }
 
 .project-image {
 	/*b- image to cover 100% all the time*/
-	flex-shrink: 0;
+	/*flex-shrink: 0;
 	min-width: 100%;
-	min-height: 100%;
-	-webkit-transition: filter .7s, transform .9s;
-	transition: filter .5s;
+	min-height: 100%;*/
+	height: 60vh;
+	-webkit-transition: filter .5s;
+	transition: filter .3s ease-in;
+}
+
+.project-end {
+	min-width: 50vw;
+	margin-left: 5vw;
+}
+.project-end p {
+	font-size: 2.6vmin;
 }
 
 .description {
@@ -297,7 +316,7 @@ nav a:hover .arrow {
 
 	color: white;
 	padding: 15px;
-	font-size: 1.8vmin;
+	font-size: 2.2vmin;
 	background-color: rgba(100, 100, 100, .2);
 
 	display: -webkit-box;
@@ -316,22 +335,22 @@ nav a:hover .arrow {
 }
 
 .description > p {
-	font-size: 1.9vmin;
+	font-size: 2vmin;
 	font-weight: bold;
 	color: black;
 	margin: auto auto 2.5% auto;
 }
 
 .git-but {
-	font-size: 2.2vmin;
-	min-width: 100%;
+	font-size: 2.8vmin;
+	width: 50%;
 	border: 1px solid #eee;
-	padding: 2px;
+	padding: 4px;
 	border-radius: 10px;
 }
 
 .projects:hover .project-image {
-	filter: blur(50px);
+	filter: blur(30px);
 	/*-webkit-transform: scale(1.5);
 	-ms-transform: scale(1.5);
 	transform: scale(1);*/
@@ -348,7 +367,7 @@ nav a:hover .arrow {
 	opacity: 1;
 }
 
-.project-one {grid-area: p-one;}
+/*.project-one {grid-area: p-one;}
 .project-two {grid-area: p-two;}
 .project-three {grid-area: p-three;}
 .project-four {grid-area: p-four;}
@@ -356,7 +375,7 @@ nav a:hover .arrow {
 .project-six {grid-area: p-six;}
 .project-seven {grid-area: p-seven;}
 .project-eight {grid-area: p-eight;}
-.project-nine {grid-area: p-nine;}
+.project-nine {grid-area: p-nine;}*/
 
 /* --------- section 3 Experience -------- */
 #section3 {
@@ -564,7 +583,7 @@ bq 720 x 1280*/
 	}*/
 	.projects {
 		position: static;
-		border: 1px solid rgba(60, 161, 105, .2);
+		/*border: 1px solid rgba(60, 161, 105, .2);*/
 		padding-top: 1px;
 		
 		display: -webkit-box;
@@ -578,11 +597,11 @@ bq 720 x 1280*/
 		/*overflow: hidden;*/
 	}
 	.project-image {
-		flex-shrink: 0;
+		/*flex-shrink: 0;
 		min-height: 0%;
-		min-width: 0%;
+		min-width: 0%;*/
 		height: 50%;
-		border-radius: 15px;
+		/*border-radius: 15px;*/
 	}
 	.projects:hover {
 		-webkit-box-shadow: none;
@@ -623,8 +642,9 @@ bq 720 x 1280*/
 		font-size: 10px;
 	}
 	.git-but {
+		font-size: 15px;
 		border: 1px solid black;
-		min-width: 60%;
+		/*min-width: 60%;*/
 		width: 60%;
 	}
 	.description a p strong {
@@ -633,6 +653,9 @@ bq 720 x 1280*/
 	.description a:first-child i {
 		font-weight: bold;
 		font-size: 19px;
+	}
+	.project-end p {
+		font-size: 12px;
 	}
 
 	/*-----section 3 small-------*/
