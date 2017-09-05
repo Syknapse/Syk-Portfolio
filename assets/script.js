@@ -92,8 +92,6 @@ $(function() {
 
 var socialLeft = $('.social-waypoint-left');
 var socialRight = $('.social-waypoint-right');
-var projectLeft = $('.project-waypoint-left');
-var projectRight = $('.project-waypoint-right');
 var sectionThreeLeft = $('.section3-waypoint-left');
 var sectionThreeRight = $('.section3-waypoint-right');
 
@@ -210,8 +208,14 @@ sectionThreeRight.waypoint(function (){
 ////////// Nav hide show ///////////////////
 
 $(function(){
-    $('.nav-btn, #b1, #b2, #b3, #b4, #b5').on('click', function(){
+    $('.nav-btn').on('click', function(){
         $('.nav-menu').toggleClass('open');
+    });
+});
+
+$(function(){
+    $('.sections, #b1, #b2, #b3, #b4, #b5').on('click', function(){
+        $('.nav-menu').removeClass('open');
     });
 });
 

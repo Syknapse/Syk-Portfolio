@@ -182,8 +182,8 @@ nav a:hover .arrow {
 
 .social {
 	font-size: 3.5vmin;
-	border: 2px solid rgba(237, 230, 235, .1);
-	border-radius: 27%;
+	/*border: 2px solid rgba(237, 230, 235, .1);
+	border-radius: 27%;*/
 	-webkit-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
@@ -191,9 +191,9 @@ nav a:hover .arrow {
 .social:hover {
     box-shadow: 0px 3px 4px -2px rgba(224, 88, 226, .7);
 	font-size: 1.7em;
-	border: 1px solid;
+	/*border: 1px solid;
 	border-color: transparent transparent rgba(224, 88, 226, .7) rgba(224, 88, 226, .7);
-	border-radius: 0 0 0 20%;
+	border-radius: 0 0 0 20%;*/
 }
 
 .social:active {
@@ -450,7 +450,7 @@ nav a:hover .arrow {
 .me, .skill {
 	background-color: rgba(168, 140, 255, .1);
 	text-align: center;
-	font-size: 3vmin;
+	font-size: 2.4vmin;
 	width: 60%;
 	border: 3px solid #555;
 	-webkit-transition: .4s;
@@ -509,8 +509,8 @@ footer {
 }
 
 .social-footer {
-	-webkit-transition: 0.3s  cubic-bezier(.03,.94,.83,.09);
-	transition: 0.3s  cubic-bezier(.03,.94,.83,.09);
+	-webkit-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
 }
 
 .social-footer:hover {
@@ -533,30 +533,9 @@ footer {
 	opacity: 0;
 }
 
-/* --------- media & compatibility queries -------- */
 
-/*medium laptop 1366 x 768
-medium tablet 1920	1080
-small tablet 1024	600
-i7 750	1334
-bq 720 x 1280*/
+/* --------- ++ media & compatibility queries ++ -------- */
 
-
-@media screen and (max-width: 1080px){
-	/*.description {
-		padding: 10px;
-		font-size: 2vmin;
-	}*/
-
-	/*#section3 .section3-info {
-		font-size: 2.5vmin;
-	}*/
-	
-	/*.about-info {
-		font-size: 2.5vmin;
-		line-height: 3.6vmin;
-	}*/
-}
 
 @media screen and (max-width: 980px) {
 	
@@ -564,7 +543,7 @@ bq 720 x 1280*/
 	.social {
 		font-size: 1em;
 		margin: 10px;
-	}	
+	}
 	.name {
 		font-size: .7em;
 	}
@@ -581,6 +560,10 @@ bq 720 x 1280*/
 			"p-six p-seven"
 			"p-eight p-nine";
 	}*/
+	.h-scroll {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 	.projects {
 		position: static;
 		/*border: 1px solid rgba(60, 161, 105, .2);*/
@@ -665,13 +648,23 @@ bq 720 x 1280*/
 	}
 
 	/*-----section 4 small-------*/
+	#section4 {
+		grid-template-rows: 10vh 15vh 50vh 15vh 10vh;
+		grid-template-areas: 
+			"... ... ... ..."
+			"about scarb bourn bei"
+			"scrn scrn scrn scrn"
+			"grana mad gand skill"
+			"... ... ... ...";
+	}
 	.about {
 		padding: 2px;
 	}
-	
 	.about-info {
 		font-size: 3.8vmin;
-		line-height: 4.4vmin;
+	}
+	.me, .skill {
+		padding: 8px;
 	}
 
 	/*----- footer small -------*/
@@ -767,16 +760,3 @@ bq 720 x 1280*/
 	}
 }
 
-/*@media screen and (max-width: 980px){
-	.description {
-		padding: 7px;
-		font-size: 1.8vmin;
-	}
-	#section3 .section3-info {
-		font-size: 2.8vmin;
-	}
-	.about-info {
-		font-size: 2.2vmin;
-		line-height: 3.2vmin;
-	}
-}*/
