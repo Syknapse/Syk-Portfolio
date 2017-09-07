@@ -384,16 +384,16 @@ nav a:hover .arrow {
 		"grana mad gand skill";
 }
 
-.me {grid-area: about;}
-.skill {grid-area: skill;}
-.city-one {grid-area: bei;}
-.city-two {grid-area: bourn;}
-.city-three {grid-area: scarb;}
-.city-four {grid-area: gand;}
-.city-five {grid-area: mad;}
-.city-six {grid-area: grana;}
+.story-icon-me {grid-area: about;}
+.story-icon-skill {grid-area: skill;}
+.story-icon-beirut {grid-area: bei;}
+.story-icon-bournemouth {grid-area: bourn;}
+.story-icon-scarborough {grid-area: scarb;}
+.story-icon-gandia {grid-area: gand;}
+.story-icon-madrid {grid-area: mad;}
+.story-icon-granada {grid-area: grana;}
 
-.about-info {
+.stories {
 	grid-area: scrn;
 	font-size: 3.5vmin;
 	line-height: 4.2vmin;
@@ -406,7 +406,7 @@ nav a:hover .arrow {
 	overflow: hidden;
 }
 
-.me, .skill {
+.story-icon-me, .story-icon-skill {
 	background-color: rgba(168, 140, 255, .1);
 	text-align: center;
 	font-size: 2.4vmin;
@@ -416,11 +416,11 @@ nav a:hover .arrow {
 	transition: .4s;
 }
 
-#about .about-info {
+#about .stories {
 	animation-duration: .3s;
 }
 
-.about {
+.story-icon {
 	padding: 15px;
 	cursor: pointer;
 }
@@ -438,7 +438,7 @@ nav a:hover .arrow {
 	transition: .4s;
 }
 
-.me:hover, .skill:hover {
+.story-icon-me:hover, .story-icon-skill:hover {
 	border-radius: 100px;
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
@@ -598,13 +598,13 @@ footer {
 			"grana mad gand skill"
 			"... ... ... ...";
 	}
-	.about {
+	.story-icon {
 		padding: 2px;
 	}
-	.about-info {
+	.stories {
 		font-size: 3.8vmin;
 	}
-	.me, .skill {
+	.story-icon-me, .story-icon-skill {
 		padding: 8px;
 	}
 

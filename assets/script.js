@@ -28,63 +28,29 @@ $(function() {
     });                        
 });
 
+// refactoring ^^
+// $('.icon').click(function(){
+//   var infoPanel = '.info-' + $(this).data('info');
+//   $('.info').not(infoPanel).hide();
+//   $(infoPanel).toggle();
+
+//   if($(this).data('info') === 1 ){
+//     $(infoPanel).addClass('animated fadeInDown');
+//   } else if($(this).data('info') === 2 ) {
+//     $(infoPanel).addClass('animated fadeInLeft');
+//   } else if($(this).data('info') === 3 ) {
+//     $(infoPanel).addClass('animated fadeInRight');
+//   } else if($(this).data('info') === 4 ) {
+//     $(infoPanel).addClass('animated fadeInUp');
+//   }
+// });
+
 // ********* Section 4 info screen toggle and animation ********** 
 
-//about me
-$(function() {
-    $('.me').click(function() {
-        $('.about-info1').toggle().addClass('animated zoomIn');
-        $('.about-info2, .about-info3, .about-info4, .about-info5, .about-info6, .about-info7, .about-info8').hide();
-    });                        
-});
-//Gandia
-$(function() {
-    $('.city-four').click(function() {
-        $('.about-info2').toggle().addClass('animated zoomIn');
-        $('.about-info1, .about-info3, .about-info4, .about-info5, .about-info6, .about-info7, .about-info8').hide();
-    });                        
-});
-//Madrid
-$(function() {
-    $('.city-five').click(function() {
-        $('.about-info3').toggle().addClass('animated zoomIn');
-        $('.about-info1, .about-info2, .about-info4, .about-info5, .about-info6, .about-info7, .about-info8').hide();
-    });                        
-});
-//Granada
-$(function() {
-    $('.city-six').click(function() {
-        $('.about-info4').toggle().addClass('animated zoomIn');
-        $('.about-info1, .about-info2, .about-info3, .about-info5, .about-info6, .about-info7, .about-info8').hide();
-    });                        
-});
-//Scarborough
-$(function() {
-    $('.city-three').click(function() {
-        $('.about-info5').toggle().addClass('animated zoomIn');
-        $('.about-info1, .about-info2, .about-info3, .about-info4, .about-info6, .about-info7, .about-info8').hide();
-    });                        
-});
-//Bournemouth
-$(function() {
-    $('.city-two').click(function() {
-        $('.about-info6').toggle().addClass('animated zoomIn');
-        $('.about-info1, .about-info2, .about-info3, .about-info4, .about-info5, .about-info7, .about-info8').hide();
-    });                        
-});
-//Beirut
-$(function() {
-    $('.city-one').click(function() {
-        $('.about-info7').toggle().addClass('animated zoomIn');
-        $('.about-info1, .about-info2, .about-info3, .about-info4, .about-info5, .about-info6, .about-info8').hide();
-    });                        
-});
-//Skills
-$(function() {
-    $('.skill').click(function() {
-        $('.about-info8').toggle().addClass('animated zoomIn');
-        $('.about-info1, .about-info2, .about-info3, .about-info4, .about-info5, .about-info6, .about-info7').hide();
-    });                        
+$('.story-icon').click(function(){
+  var storyPanel = '.story-' + $(this).data('story');
+  $('.stories').not(storyPanel).hide();
+  $(storyPanel).toggle().addClass('animated zoomIn');
 });
 
 
