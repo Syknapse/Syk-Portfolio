@@ -96,7 +96,7 @@ var sectionThreeLeft = $('.section3-waypoint-left');
 var sectionThreeRight = $('.section3-waypoint-right');
 
 // nav active class
-$('#section1').waypoint(function(direction) {
+$('#landing').waypoint(function(direction) {
   if (direction === 'down') {
     $('nav a').removeClass('active-nav');
     $('#b1').addClass('active-nav');
@@ -105,7 +105,7 @@ $('#section1').waypoint(function(direction) {
   offset: '25%'
 });
 
-$('#section1').waypoint(function(direction) {
+$('#landing').waypoint(function(direction) {
   if (direction === 'up') {
     $('nav a').removeClass('active-nav');
     $('#b1').addClass('active-nav');
@@ -114,7 +114,7 @@ $('#section1').waypoint(function(direction) {
   offset: '-25%'
 });
 
-$('#section2').waypoint(function(direction) {
+$('#portfolio').waypoint(function(direction) {
   if (direction === 'down') {
     $('nav a').removeClass('active-nav');
     $('#b2').addClass('active-nav');
@@ -123,7 +123,7 @@ $('#section2').waypoint(function(direction) {
   offset: '25%'
 });
 
-$('#section2').waypoint(function(direction) {
+$('#portfolio').waypoint(function(direction) {
   if (direction === 'up') {
     $('nav a').removeClass('active-nav');
     $('#b2').addClass('active-nav');
@@ -132,7 +132,7 @@ $('#section2').waypoint(function(direction) {
   offset: '-25%'
 });
 
-$('#section3').waypoint(function(direction) {
+$('#experience').waypoint(function(direction) {
   if (direction === 'down') {
     $('nav a').removeClass('active-nav');
     $('#b3').addClass('active-nav');
@@ -141,7 +141,7 @@ $('#section3').waypoint(function(direction) {
   offset: '25%'
 });
 
-$('#section3').waypoint(function(direction) {
+$('#experience').waypoint(function(direction) {
   if (direction === 'up') {
     $('nav a').removeClass('active-nav');
     $('#b3').addClass('active-nav');
@@ -150,7 +150,7 @@ $('#section3').waypoint(function(direction) {
   offset: '-25%'
 });
 
-$('#section4').waypoint(function(direction) {
+$('#about').waypoint(function(direction) {
   if (direction === 'down') {
     $('nav a').removeClass('active-nav');
     $('#b4').addClass('active-nav');
@@ -159,7 +159,7 @@ $('#section4').waypoint(function(direction) {
   offset: '25%'
 });
 
-$('#section4').waypoint(function(direction) {
+$('#about').waypoint(function(direction) {
   if (direction === 'up') {
     $('nav a').removeClass('active-nav');
     $('#b4').addClass('active-nav');
@@ -168,7 +168,7 @@ $('#section4').waypoint(function(direction) {
   offset: '-25%'
 });
 
-$('#footer').waypoint(function(direction) {
+$('#contact').waypoint(function(direction) {
   if (direction === 'down') {
     $('nav a').removeClass('active-nav');
     $('#b5').addClass('active-nav');
@@ -177,7 +177,7 @@ $('#footer').waypoint(function(direction) {
   offset: '25%'
 });
 
-$('#footer').waypoint(function(direction) {
+$('#contact').waypoint(function(direction) {
   if (direction === 'up') {
     $('nav a').removeClass('active-nav');
     $('#b5').addClass('active-nav');

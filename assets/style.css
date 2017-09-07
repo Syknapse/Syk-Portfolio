@@ -4,9 +4,6 @@
 	padding: 0;
 }
 
-/*font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Arima Madurai', cursive;*/
-
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 10px;
@@ -106,13 +103,13 @@ nav a:hover .arrow {
 	width: 65%;
 }
 
-#section1, #section2, #section3, #section4, #section5 {
+#landing, #portfolio, #experience, #about, #section5 {
 	height: 100vh;
 	width: auto;
 }
 
 /* --------- section 1 Landing -------- */
-#section1 {
+#landing {
 	background-color: rgba(237, 230, 235, .1);
 	font-size: 3em;
 	text-align: center;
@@ -182,8 +179,6 @@ nav a:hover .arrow {
 
 .social {
 	font-size: 3.5vmin;
-	/*border: 2px solid rgba(237, 230, 235, .1);
-	border-radius: 27%;*/
 	-webkit-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
@@ -191,9 +186,6 @@ nav a:hover .arrow {
 .social:hover {
     box-shadow: 0px 3px 4px -2px rgba(224, 88, 226, .7);
 	font-size: 1.7em;
-	/*border: 1px solid;
-	border-color: transparent transparent rgba(224, 88, 226, .7) rgba(224, 88, 226, .7);
-	border-radius: 0 0 0 20%;*/
 }
 
 .social:active {
@@ -205,7 +197,7 @@ nav a:hover .arrow {
 }
 
 /* --------- section 2 Portfolio -------- */
-#section2 {
+#portfolio {
 	background-color: rgba(95, 255, 167, .1);
 	padding: 5px;
 	border-bottom: 1px solid rgba(60, 161, 105, .5);
@@ -215,15 +207,6 @@ nav a:hover .arrow {
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
-	/*display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-areas: 
-		"p-one p-two p-three"
-		"p-four p-five p-six"
-		"p-seven p-eight p-nine";*/
-
-	
 }
 
 .h-scroll {
@@ -239,7 +222,6 @@ nav a:hover .arrow {
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	margin-left: 40px;
 	margin-right: 40px;
-	/*background-color: rgba(95, 255, 167, .1);*/
 	border: 3px solid rgba(20, 30, 20, .1);
 	height: 80vh;
 }
@@ -252,15 +234,12 @@ nav a:hover .arrow {
 	background-color: transparent;
 }
 .h-scroll::-webkit-scrollbar-thumb {
-	/*background-color: rgba(95, 255, 167, .4);*/
 	border-radius: 20px;
 	border: 1px solid rgba(224, 88, 226, .7);
 }
 .h-scroll::-webkit-scrollbar-button {
-	/*background-color: rgba(95, 255, 167, .2);*/
 	width: 2em;
 	border-radius: 5px;
-	/*border: 1px solid rgba(95, 255, 167, .8);*/
 }
 .h-scroll::-webkit-scrollbar-button:hover {
 	background-color: rgba(95, 255, 167, .4);
@@ -270,8 +249,6 @@ nav a:hover .arrow {
 	margin: 5px;
 	border-radius: 15px;
 	position: relative;
-	
-	/*a- image to cover 100% all the time*/
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -279,16 +256,11 @@ nav a:hover .arrow {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*overflow: hidden;*/
 	margin-left: 3vw;
 	height: 40vh;
 }
 
 .project-image {
-	/*b- image to cover 100% all the time*/
-	/*flex-shrink: 0;
-	min-width: 100%;
-	min-height: 100%;*/
 	height: 40vh;
 	-webkit-transition: filter .5s;
 	transition: filter .3s ease-in;
@@ -351,9 +323,6 @@ nav a:hover .arrow {
 
 .projects:hover .project-image {
 	filter: blur(30px);
-	/*-webkit-transform: scale(1.5);
-	-ms-transform: scale(1.5);
-	transform: scale(1);*/
 }
 
 .projects:hover {
@@ -367,18 +336,8 @@ nav a:hover .arrow {
 	opacity: 1;
 }
 
-/*.project-one {grid-area: p-one;}
-.project-two {grid-area: p-two;}
-.project-three {grid-area: p-three;}
-.project-four {grid-area: p-four;}
-.project-five {grid-area: p-five;}
-.project-six {grid-area: p-six;}
-.project-seven {grid-area: p-seven;}
-.project-eight {grid-area: p-eight;}
-.project-nine {grid-area: p-nine;}*/
-
 /* --------- section 3 Experience -------- */
-#section3 {
+#experience {
 	background-color: rgba(168, 140, 255, .1);
 	font-size: 5.5vmin;
 	text-align: center;
@@ -402,7 +361,7 @@ nav a:hover .arrow {
 .section3-icon3 {grid-area: icon-three;}
 .section3-icon4 {grid-area: icon-four;}
 
-#section3 .section3-info {
+#experience .section3-info {
 	grid-area: screen;
   	display: none;
   	overflow: hidden;
@@ -411,7 +370,7 @@ nav a:hover .arrow {
 }
 
 /* --------- section 4 About -------- */
-#section4 {
+#about {
 	background-color: rgba(95, 255, 167, .1);
 	border-bottom: 1px solid rgba(60, 161, 105, .5);
 	display: grid;
@@ -457,7 +416,7 @@ nav a:hover .arrow {
 	transition: .4s;
 }
 
-#section4 .about-info {
+#about .about-info {
 	animation-duration: .3s;
 }
 
@@ -494,7 +453,7 @@ nav a:hover .arrow {
 	filter: grayscale(60%);
 }
 
-/* --------- footer -------- */
+/* --------- footer Contact-------- */
 footer {
 	background-color: rgba(237, 230, 235, .1);
 	display: -webkit-box;
@@ -549,24 +508,12 @@ footer {
 	}
 
 	/*-----section 2 small-------*/
-	/*#section2 {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(5, 1fr);
-		height: 300vh;
-		grid-template-areas:
-			"p-one p-one"
-			"p-two p-three"
-			"p-four p-five"
-			"p-six p-seven"
-			"p-eight p-nine";
-	}*/
 	.h-scroll {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
 	.projects {
 		position: static;
-		/*border: 1px solid rgba(60, 161, 105, .2);*/
 		padding-top: 1px;
 		height: 60vh;
 		
@@ -578,14 +525,9 @@ footer {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		/*overflow: hidden;*/
 	}
 	.project-image {
-		/*flex-shrink: 0;
-		min-height: 0%;
-		min-width: 0%;*/
 		height: 50%;
-		/*border-radius: 15px;*/
 	}
 	.projects:hover {
 		-webkit-box-shadow: none;
@@ -628,7 +570,6 @@ footer {
 	.git-but {
 		font-size: 15px;
 		border: 1px solid black;
-		/*min-width: 60%;*/
 		width: 60%;
 	}
 	.description a p strong {
@@ -643,12 +584,12 @@ footer {
 	}
 
 	/*-----section 3 small-------*/
-	#section3 .section3-info {
+	#experience .section3-info {
 		font-size: 4.4vmin;
 	}
 
 	/*-----section 4 small-------*/
-	#section4 {
+	#about {
 		grid-template-rows: 10vh 15vh 50vh 15vh 10vh;
 		grid-template-areas: 
 			"... ... ... ..."
