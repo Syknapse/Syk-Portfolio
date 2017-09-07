@@ -1,49 +1,22 @@
 $(document).ready();
 
-// ****************************** for refactoring ********************
 // ********* Section 3 info screen toggle and animation ********** 
 
-$(function() {
-    $('.section3-icon1').click(function() {
-        $('.section3-info1').toggle().addClass('animated fadeInDown');
-        $('.section3-info2, .section3-info3, .section3-info4').hide();
-    });                        
-});
-$(function() {
-    $('.section3-icon2').click(function() {
-        $('.section3-info2').toggle().addClass('animated fadeInLeft');
-        $('.section3-info1, .section3-info3, .section3-info4').hide();
-    });                      
-});
-$(function() {
-    $('.section3-icon3').click(function() {
-        $('.section3-info3').toggle().addClass('animated fadeInRight');
-        $('.section3-info1, .section3-info2, .section3-info4').hide();
-    });                        
-});
-$(function() {
-    $('.section3-icon4').click(function() {
-        $('.section3-info4').toggle().addClass('animated fadeInUp');
-        $('.section3-info1, .section3-info2, .section3-info3').hide();
-    });                        
-});
+$('.exp-icons').click(function(){
+  var infoPanel = '.exp-info-' + $(this).data('info');
+  $('.exp-info').not(infoPanel).hide();
+  $(infoPanel).toggle();
 
-// refactoring ^^
-// $('.icon').click(function(){
-//   var infoPanel = '.info-' + $(this).data('info');
-//   $('.info').not(infoPanel).hide();
-//   $(infoPanel).toggle();
-
-//   if($(this).data('info') === 1 ){
-//     $(infoPanel).addClass('animated fadeInDown');
-//   } else if($(this).data('info') === 2 ) {
-//     $(infoPanel).addClass('animated fadeInLeft');
-//   } else if($(this).data('info') === 3 ) {
-//     $(infoPanel).addClass('animated fadeInRight');
-//   } else if($(this).data('info') === 4 ) {
-//     $(infoPanel).addClass('animated fadeInUp');
-//   }
-// });
+  if($(this).data('info') === 'programming' ){
+    $(infoPanel).addClass('animated fadeInDown');
+  } else if($(this).data('info') === 'music' ) {
+    $(infoPanel).addClass('animated fadeInLeft');
+  } else if($(this).data('info') === 'teaching' ) {
+    $(infoPanel).addClass('animated fadeInRight');
+  } else if($(this).data('info') === 'idea' ) {
+    $(infoPanel).addClass('animated fadeInUp');
+  }
+});
 
 // ********* Section 4 info screen toggle and animation ********** 
 
@@ -54,6 +27,7 @@ $('.story-icon').click(function(){
 });
 
 
+// ****************************** for refactoring ********************
 // ********* Waypoints ********** 
 
 var socialLeft = $('.social-waypoint-left');
@@ -62,6 +36,10 @@ var sectionThreeLeft = $('.section3-waypoint-left');
 var sectionThreeRight = $('.section3-waypoint-right');
 
 // nav active class
+
+// var section = $('#landing'), $('#portfolio') ...
+// var navButton = $('#b1'), $('#b2') ...
+
 $('#landing').waypoint(function(direction) {
   if (direction === 'down') {
     $('nav a').removeClass('active-nav');

@@ -352,16 +352,16 @@ nav a:hover .arrow {
 	    ". icon-four .";
 }
 
-.section3-icons {
+.exp-icons {
 	cursor: pointer;
 }
 
-.section3-icon1 {grid-area: icon-one;}
-.section3-icon2 {grid-area: icon-two;}
-.section3-icon3 {grid-area: icon-three;}
-.section3-icon4 {grid-area: icon-four;}
+.exp-icon-programming {grid-area: icon-one;}
+.exp-icon-music {grid-area: icon-two;}
+.exp-icon-teaching {grid-area: icon-three;}
+.exp-icon-idea {grid-area: icon-four;}
 
-#experience .section3-info {
+#experience .exp-info {
 	grid-area: screen;
   	display: none;
   	overflow: hidden;
@@ -584,7 +584,7 @@ footer {
 	}
 
 	/*-----section 3 small-------*/
-	#experience .section3-info {
+	#experience .exp-info {
 		font-size: 4.4vmin;
 	}
 
