@@ -40,6 +40,22 @@ var sectionThreeRight = $('.section3-waypoint-right');
 // var section = $('#landing'), $('#portfolio') ...
 // var navButton = $('#b1'), $('#b2') ...
 
+// $('nav a').removeClass('active-nav');
+        // $(this+'-nav').addClass('active-nav');
+        // console.log(this);
+
+// $('section').waypoint(function(direction){
+//     if(direction === 'down'){
+//         $('nav a').removeClass('active-nav');
+//         $('#b2, #b3').addClass('active-nav');  
+//     }
+// }, {
+//     offset: '25%'
+// });
+
+// var navButton = $('nav a').attr('href') <<<<<
+
+
 $('#landing').waypoint(function(direction) {
   if (direction === 'down') {
     $('nav a').removeClass('active-nav');
