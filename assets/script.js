@@ -27,82 +27,9 @@ $('.story-icon').click(function(){
 });
 
 
-// ****************************** for refactoring ********************
 // ********* Waypoints ********** 
 
-var socialLeft = $('.social-waypoint-left');
-var socialRight = $('.social-waypoint-right');
-var sectionThreeLeft = $('.section3-waypoint-left');
-var sectionThreeRight = $('.section3-waypoint-right');
-
 // nav active class
-
-// var section = $('#landing'), $('#portfolio') ...
-// var navButton = $('#b1'), $('#b2') ...
-
-// $('nav a').removeClass('active-nav');
-        // $(this+'-nav').addClass('active-nav');
-        // console.log(this);
-
-// $('section').waypoint(function(direction){
-//     if(direction === 'down'){
-//         $('nav a').removeClass('active-nav');
-//         $('#b2, #b3').addClass('active-nav');  
-//     }
-// }, {
-//     offset: '25%'
-// });
-
-// var navButton = $('nav a').attr('href') <<<<<
-
-
-
-// $('section').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     var linkName = $('nav a').each(function (){
-//     console.log($(this).attr('href'));
-//     });
-//     var sectionName = $('section[id]');
-//     $('nav a').removeClass('active-nav');
-//     if(linkName == sectionName){
-//         $(this).addClass('active-nav');
-//     }
-//   }
-// }, {
-//   offset: '25%'
-// });
-
-
-// $('section').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     $('nav a').removeClass('active-nav');
-//     $('nav a[href]').each(function (){
-//         if($('nav a[href]') == $('section[id]')){
-//          $(this).addClass('active-nav');
-//         }
-//     });
-//   }
-// }, {
-//   offset: '25%'
-// });
-
-// var linkName = $('nav a').map( function() {
-//     return $(this).attr('href');
-//     }).get();
-
-// $('section').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     $('nav a').removeClass('active-nav');
-//     var linkName = $('nav a').map( function() {
-//     return $(this).attr('href');
-//     }).get();
-//     if(linkName == $('section[id]')){
-//          $(this).addClass('active-nav');
-//         }
-//   }
-// }, {
-//   offset: '25%'
-// });
 
 $('section').waypoint(function(direction) {
   if (direction === 'down') {
@@ -122,97 +49,10 @@ $('section').waypoint(function(direction) {
   offset: '-25%'
 });
 
-
-////////////////////
-// $('#landing').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b1').addClass('active-nav');
-//   }
-// }, {
-//   offset: '25%'
-// });
-
-// $('#landing').waypoint(function(direction) {
-//   if (direction === 'up') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b1').addClass('active-nav');
-//   }
-// }, {
-//   offset: '-25%'
-// });
-
-// $('#portfolio').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b2').addClass('active-nav');
-//   }
-// }, {
-//   offset: '25%'
-// });
-
-// $('#portfolio').waypoint(function(direction) {
-//   if (direction === 'up') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b2').addClass('active-nav');
-//   }
-// }, {
-//   offset: '-25%'
-// });
-
-// $('#experience').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b3').addClass('active-nav');
-//   }
-// }, {
-//   offset: '25%'
-// });
-
-// $('#experience').waypoint(function(direction) {
-//   if (direction === 'up') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b3').addClass('active-nav');
-//   }
-// }, {
-//   offset: '-25%'
-// });
-
-// $('#about').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b4').addClass('active-nav');
-//   }
-// }, {
-//   offset: '25%'
-// });
-
-// $('#about').waypoint(function(direction) {
-//   if (direction === 'up') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b4').addClass('active-nav');
-//   }
-// }, {
-//   offset: '-25%'
-// });
-
-// $('#contact').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b5').addClass('active-nav');
-//   }
-// }, {
-//   offset: '25%'
-// });
-
-// $('#contact').waypoint(function(direction) {
-//   if (direction === 'up') {
-//     $('nav a').removeClass('active-nav');
-//     $('#b5').addClass('active-nav');
-//   }
-// }, {
-//   offset: '-25%'
-// });
+var socialLeft = $('.social-waypoint-left');
+var socialRight = $('.social-waypoint-right');
+var sectionThreeLeft = $('.section3-waypoint-left');
+var sectionThreeRight = $('.section3-waypoint-right');
 
 // section one
 socialLeft.waypoint(function (){
@@ -246,36 +86,4 @@ $(function(){
         $('.nav-menu').removeClass('open');
     });
 });
-
-// ****************************** ^ for refactoring ^ ********************
-
-
-////// refactoring ////////
-
-// const icons = document.querySelectorAll('.section3-icons');
-// const infos = document.querySelectorAll('section3-info');
-
-// function toggleAndAnimate(){
-//     infos.toggle().addClass('animated fadeInDown');
-//     infos.forEach(info => info.hide());
-//     console.log();
-// }
-// icons.forEach(icon => icon.addEventListener('click', toggleAndAnimate));
-
-//////////
-
-// var icons = document.querySelectorAll('.section3-icons');
-// var infos = document.querySelectorAll('section3-info');
-
-// icons.addEventListener('click', showInfo);
-
-// function showInfo(){
-//     infos.style.display = 'block';
-// }
-// alert('booo');
-
-
-
-
-
 
