@@ -56,95 +56,163 @@ var sectionThreeRight = $('.section3-waypoint-right');
 // var navButton = $('nav a').attr('href') <<<<<
 
 
-$('#landing').waypoint(function(direction) {
+
+// $('section').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     var linkName = $('nav a').each(function (){
+//     console.log($(this).attr('href'));
+//     });
+//     var sectionName = $('section[id]');
+//     $('nav a').removeClass('active-nav');
+//     if(linkName == sectionName){
+//         $(this).addClass('active-nav');
+//     }
+//   }
+// }, {
+//   offset: '25%'
+// });
+
+
+// $('section').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     $('nav a').removeClass('active-nav');
+//     $('nav a[href]').each(function (){
+//         if($('nav a[href]') == $('section[id]')){
+//          $(this).addClass('active-nav');
+//         }
+//     });
+//   }
+// }, {
+//   offset: '25%'
+// });
+
+// var linkName = $('nav a').map( function() {
+//     return $(this).attr('href');
+//     }).get();
+
+// $('section').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     $('nav a').removeClass('active-nav');
+//     var linkName = $('nav a').map( function() {
+//     return $(this).attr('href');
+//     }).get();
+//     if(linkName == $('section[id]')){
+//          $(this).addClass('active-nav');
+//         }
+//   }
+// }, {
+//   offset: '25%'
+// });
+
+$('section').waypoint(function(direction) {
   if (direction === 'down') {
     $('nav a').removeClass('active-nav');
-    $('#b1').addClass('active-nav');
+    $("nav a").eq($(this.element).index()).addClass('active-nav');
   }
 }, {
   offset: '25%'
 });
 
-$('#landing').waypoint(function(direction) {
+$('section').waypoint(function(direction) {
   if (direction === 'up') {
     $('nav a').removeClass('active-nav');
-    $('#b1').addClass('active-nav');
+    $("nav a").eq($(this.element).index()).addClass('active-nav');
   }
 }, {
   offset: '-25%'
 });
 
-$('#portfolio').waypoint(function(direction) {
-  if (direction === 'down') {
-    $('nav a').removeClass('active-nav');
-    $('#b2').addClass('active-nav');
-  }
-}, {
-  offset: '25%'
-});
 
-$('#portfolio').waypoint(function(direction) {
-  if (direction === 'up') {
-    $('nav a').removeClass('active-nav');
-    $('#b2').addClass('active-nav');
-  }
-}, {
-  offset: '-25%'
-});
+////////////////////
+// $('#landing').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b1').addClass('active-nav');
+//   }
+// }, {
+//   offset: '25%'
+// });
 
-$('#experience').waypoint(function(direction) {
-  if (direction === 'down') {
-    $('nav a').removeClass('active-nav');
-    $('#b3').addClass('active-nav');
-  }
-}, {
-  offset: '25%'
-});
+// $('#landing').waypoint(function(direction) {
+//   if (direction === 'up') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b1').addClass('active-nav');
+//   }
+// }, {
+//   offset: '-25%'
+// });
 
-$('#experience').waypoint(function(direction) {
-  if (direction === 'up') {
-    $('nav a').removeClass('active-nav');
-    $('#b3').addClass('active-nav');
-  }
-}, {
-  offset: '-25%'
-});
+// $('#portfolio').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b2').addClass('active-nav');
+//   }
+// }, {
+//   offset: '25%'
+// });
 
-$('#about').waypoint(function(direction) {
-  if (direction === 'down') {
-    $('nav a').removeClass('active-nav');
-    $('#b4').addClass('active-nav');
-  }
-}, {
-  offset: '25%'
-});
+// $('#portfolio').waypoint(function(direction) {
+//   if (direction === 'up') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b2').addClass('active-nav');
+//   }
+// }, {
+//   offset: '-25%'
+// });
 
-$('#about').waypoint(function(direction) {
-  if (direction === 'up') {
-    $('nav a').removeClass('active-nav');
-    $('#b4').addClass('active-nav');
-  }
-}, {
-  offset: '-25%'
-});
+// $('#experience').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b3').addClass('active-nav');
+//   }
+// }, {
+//   offset: '25%'
+// });
 
-$('#contact').waypoint(function(direction) {
-  if (direction === 'down') {
-    $('nav a').removeClass('active-nav');
-    $('#b5').addClass('active-nav');
-  }
-}, {
-  offset: '25%'
-});
+// $('#experience').waypoint(function(direction) {
+//   if (direction === 'up') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b3').addClass('active-nav');
+//   }
+// }, {
+//   offset: '-25%'
+// });
 
-$('#contact').waypoint(function(direction) {
-  if (direction === 'up') {
-    $('nav a').removeClass('active-nav');
-    $('#b5').addClass('active-nav');
-  }
-}, {
-  offset: '-25%'
-});
+// $('#about').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b4').addClass('active-nav');
+//   }
+// }, {
+//   offset: '25%'
+// });
+
+// $('#about').waypoint(function(direction) {
+//   if (direction === 'up') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b4').addClass('active-nav');
+//   }
+// }, {
+//   offset: '-25%'
+// });
+
+// $('#contact').waypoint(function(direction) {
+//   if (direction === 'down') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b5').addClass('active-nav');
+//   }
+// }, {
+//   offset: '25%'
+// });
+
+// $('#contact').waypoint(function(direction) {
+//   if (direction === 'up') {
+//     $('nav a').removeClass('active-nav');
+//     $('#b5').addClass('active-nav');
+//   }
+// }, {
+//   offset: '-25%'
+// });
 
 // section one
 socialLeft.waypoint(function (){

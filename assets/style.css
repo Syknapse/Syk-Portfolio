@@ -453,8 +453,8 @@ nav a:hover .arrow {
 	filter: grayscale(60%);
 }
 
-/* --------- footer Contact-------- */
-footer {
+/* --------- Section 5 Contact-------- */
+#contact {
 	background-color: rgba(237, 230, 235, .1);
 	display: -webkit-box;
 	display: -moz-box;
@@ -608,7 +608,7 @@ footer {
 		padding: 8px;
 	}
 
-	/*----- footer small -------*/
+	/*----- Contact small -------*/
 	.social-footer {
 		-webkit-transition: 0.3s linear;
 		transition: 0.3s linear;
