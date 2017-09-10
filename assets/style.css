@@ -17,6 +17,18 @@ a {
 
 /* ------------ NAV ------------ */
 
+/* ++++ fallback ++++ */
+nav > a {
+	display: block;
+	padding-top: 10%;
+}
+@supports (grid-area: auto){
+nav > a {
+	padding-top: unset;
+}
+}
+/* ---- fallback ---- */
+
 nav {
 	position: fixed;
 	width: 35%;
@@ -46,9 +58,11 @@ nav {
 	margin-top: 2px;
 }
 
+@supports (grid-area: auto){
 .active-nav .arrow {
 	width: 40px;
 	opacity: .5;
+}
 }
 
 nav > a {
@@ -103,12 +117,51 @@ nav a:hover .arrow {
 	width: 65%;
 }
 
-#landing, #portfolio, #experience, #about, #section5 {
+#landing, #portfolio, #experience, #about, #contact {
 	height: 100vh;
 	width: auto;
 }
 
+/* ++++ fallback ++++ */
+.fallback {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	color: #666;
+}
+
+@supports (grid-area: auto){
+.fallback {
+	display: none;
+}
+}
+/* ---- fallback ---- */
+
 /* --------- section 1 Landing -------- */
+
+/* ++++ fallback ++++ */
+.photo {
+	display: inline-block;
+	margin-top: 5%;
+	width: 30%;
+}
+.social {
+	display: inline-block;
+	padding: 5%;
+}
+.blurb {
+	padding-top: 10%;
+}
+@supports (grid-area: auto){
+.social {
+	padding: unset;
+}
+.blurb {
+	padding-top: unset;
+}
+}
+/* ---- fallback ---- */
+
 #landing {
 	background-color: rgba(237, 230, 235, .1);
 	font-size: 3em;
@@ -124,6 +177,8 @@ nav a:hover .arrow {
 	    ". blurb blurb blurb blurb blurb .";
 }
 
+/* ++++ progressive enhancement ++++ */
+@supports (grid-area: auto){
 .photo {
 	grid-area: photo;
 	justify-self: center;
@@ -138,6 +193,7 @@ nav a:hover .arrow {
 	width: 68%;
 	height: 68%;
 	padding-top: 20px;
+}
 }
 
 #profile {
@@ -197,6 +253,58 @@ nav a:hover .arrow {
 }
 
 /* --------- section 2 Portfolio -------- */
+
+/* ++++ fallback ++++ */
+#portfolio {
+	display: inline;
+}
+.h-scroll {
+	border-bottom: 1px solid rgba(60, 161, 105, .5);
+}
+
+.projects {
+		position: static;
+		padding-top: 1px;
+		height: 60vh;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+.project-image {
+		height: 50%;
+}
+
+.project-end {
+	display: none;
+}
+
+.description {
+		position: relative;
+		height: 50%;
+		color: black;
+		padding: 5px;
+		font-size: 20px;
+		min-width: 100%;
+		background-color: transparent;
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+/* ---- fallback ---- */
+
+/* ++++ progressive enhancement ++++ */
+@supports (grid-area: auto){
 #portfolio {
 	background-color: rgba(95, 255, 167, .1);
 	padding: 5px;
@@ -335,8 +443,30 @@ nav a:hover .arrow {
 	visibility: visible;
 	opacity: 1;
 }
+}
 
 /* --------- section 3 Experience -------- */
+
+/* ++++ fallback ++++ */
+#experience {
+	display: block;
+	font-size: 30px;
+	background-color: rgba(168, 140, 255, .1);
+	text-align: center;
+	border-bottom: 1px solid rgba(168, 140, 255, .5);
+}
+
+.exp-icons {
+	display: inline-block;
+	margin-top: 20%;
+	padding: 0 2% 5% 2%;
+
+	cursor: pointer;
+}
+/* ---- fallback ---- */
+
+/* ++++ progressive enhancement ++++ */
+@supports (grid-area: auto){
 #experience {
 	background-color: rgba(168, 140, 255, .1);
 	font-size: 5.5vmin;
@@ -353,7 +483,8 @@ nav a:hover .arrow {
 }
 
 .exp-icons {
-	cursor: pointer;
+	margin-top: 0;
+}
 }
 
 .exp-icon-programming {grid-area: icon-one;}
@@ -370,6 +501,29 @@ nav a:hover .arrow {
 }
 
 /* --------- section 4 About -------- */
+
+/* ++++ fallback ++++ */
+.story-icon {
+	float: left;
+}
+.story-icon-me, .story-icon-skill {
+	width: 30%;
+	margin: 7% 7% 1% 7%;
+}
+.map {
+	width: 30%;
+	height: 10%;
+	margin-bottom: 5%;
+}
+.map img {
+	width: 50%;
+	height: 100%;
+}
+.stories {
+	width: 100%;
+}
+/* ---- fallback ---- */
+
 #about {
 	background-color: rgba(95, 255, 167, .1);
 	border-bottom: 1px solid rgba(60, 161, 105, .5);
@@ -406,18 +560,18 @@ nav a:hover .arrow {
 	overflow: hidden;
 }
 
+#about .stories {
+	animation-duration: .3s;
+}
+
 .story-icon-me, .story-icon-skill {
 	background-color: rgba(168, 140, 255, .1);
 	text-align: center;
 	font-size: 2.4vmin;
-	width: 60%;
+	/*width: 60%;*/
 	border: 3px solid #555;
 	-webkit-transition: .4s;
 	transition: .4s;
-}
-
-#about .stories {
-	animation-duration: .3s;
 }
 
 .story-icon {
@@ -426,16 +580,30 @@ nav a:hover .arrow {
 }
 
 .map {
-	max-width: 90%;
+	/*max-width: 90%;*/
 	text-align: center;
 }
 
 .map img {
-	max-width: 90%;
+	/*max-width: 90%;*/
 	border: 3px solid #555;
 	filter: grayscale(80%);
 	-webkit-transition: .4s;
 	transition: .4s;
+}
+
+@supports (grid-area: auto){
+.story-icon-me, .story-icon-skill {
+	width: 60%;
+}
+.map {
+	width: 90%;
+	height: auto;
+	margin-bottom: unset;
+}
+.map img {
+	width: 90%;
+}
 }
 
 .story-icon-me:hover, .story-icon-skill:hover {
@@ -454,6 +622,21 @@ nav a:hover .arrow {
 }
 
 /* --------- Section 5 Contact-------- */
+
+/* ++++ fallback ++++ */
+#contact {
+	justify-content: center;
+}
+.social-footer {
+	padding: 0 4% 0 4%;
+}
+@supports (grid-area: auto){
+.social-footer {
+	padding: unset;
+}
+}
+/* ---- fallback ---- */
+
 #contact {
 	background-color: rgba(237, 230, 235, .1);
 	display: -webkit-box;
@@ -493,7 +676,7 @@ nav a:hover .arrow {
 }
 
 
-/* --------- ++ media & compatibility queries ++ -------- */
+/* --------- +++++++ media queries +++++++ -------- */
 
 
 @media screen and (max-width: 980px) {
