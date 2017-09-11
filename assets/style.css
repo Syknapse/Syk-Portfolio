@@ -513,14 +513,21 @@ nav a:hover .arrow {
 .map {
 	width: 30%;
 	height: 10%;
-	margin-bottom: 5%;
+	margin-bottom: 2.4%;
 }
 .map img {
 	width: 50%;
 	height: 100%;
 }
 .stories {
-	width: 100%;
+	width: 90%;
+	font-size: 2.3vmin;
+}
+@supports (grid-area:auto){
+.stories {
+	width: unset;
+	font-size: 3.5vmin;
+}
 }
 /* ---- fallback ---- */
 
@@ -549,7 +556,7 @@ nav a:hover .arrow {
 
 .stories {
 	grid-area: scrn;
-	font-size: 3.5vmin;
+	/*font-size: 3.5vmin;*/
 	line-height: 4.2vmin;
 	text-align: justify;
 	height: 96%;
@@ -648,6 +655,7 @@ nav a:hover .arrow {
 	align-items: center;
 	height: 100vh;
 	font-size: 3em;
+	position: relative;
 }
 
 .social-footer {
@@ -668,15 +676,15 @@ footer {
 	color: rgba(224, 88, 226, .9);
 	font-size: 2vmin;
 	height: 40px;
-	margin-top: -40px;
+	width: 40vw;
+	position: absolute;
+	bottom: 0;
 }
 footer p:nth-child(1) {
 	float: left;
-	margin-left: 40%;
 }
 footer p:nth-child(2) {
 	float: right;
-	margin-right: 6%;
 }
 
 /* --------- waypoints -------- */
