@@ -663,6 +663,22 @@ nav a:hover .arrow {
 	font-size: 3em;
 }
 
+/* --------- footer -------- */
+footer {
+	color: rgba(224, 88, 226, .9);
+	font-size: 2vmin;
+	height: 40px;
+	margin-top: -40px;
+}
+footer p:nth-child(1) {
+	float: left;
+	margin-left: 40%;
+}
+footer p:nth-child(2) {
+	float: right;
+	margin-right: 6%;
+}
+
 /* --------- waypoints -------- */
 
 .animate-waypoint {
@@ -801,6 +817,9 @@ nav a:hover .arrow {
 	}
 	.social-footer:active {
 		font-size: 1.9em;
+	}
+	footer {
+		font-size: 2.3vmin;
 	}
 
 	/*----- NAV small -------*/
